@@ -1,0 +1,10 @@
+[
+  {
+    "question": "Do you want an assistant that answers prospective students' questions about undergraduate admissions: application deadlines?",
+    "reason": "answerable from the brief"
+  },
+  {
+    "question": "Which languages must the assistant support?",
+    "reason": "over the 5-question cap"
+  }
+]

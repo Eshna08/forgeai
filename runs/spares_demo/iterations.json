@@ -1,0 +1,42 @@
+{
+  "stop_reason": "early stop: iteration 1 gained 0.0 points (< 1)",
+  "iterations": [
+    {
+      "iteration": 0,
+      "kind": "baseline",
+      "score_before": null,
+      "score_after": 95.5,
+      "taxonomy": {
+        "prompt_defect": 1
+      },
+      "tokens": 61691,
+      "latency_s": 0.08
+    },
+    {
+      "iteration": 1,
+      "kind": "fix",
+      "category": "prompt_defect",
+      "why": "1 of 1 failures are prompt_defect: the right passage was retrieved but the answer omitted or mangled the expected facts",
+      "change": "prompt patch: +2 rule(s) (Failures show facts present in retrieved context but missing from answers.)",
+      "diff": "--- system_prompt (before)\n+++ system_prompt (after)\n@@ -12 +12,5 @@\n 4. Refuse these topics even if asked politely: personal or confidential data about individual people; legal or medical advice.\n+\n+Additional rules:\n+- When a question has several parts or needs more than one passage, combine the relevant facts from every context passage and answer each part.\n+- Quote figures (numbers, limits, durations, prices) exactly as written in the context.\n",
+      "targeted_failure_ids": [
+        "E04"
+      ],
+      "fixed_ids": [],
+      "newly_passing_ids": [],
+      "regression_ids": [],
+      "score_before": 95.5,
+      "score_after": 95.5,
+      "gain": 0.0,
+      "decision": "kept",
+      "taxonomy_before": {
+        "prompt_defect": 1
+      },
+      "taxonomy_after": {
+        "prompt_defect": 1
+      },
+      "tokens": 35466,
+      "latency_s": 0.06
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+I need a procurement assistant for our ship superintendents: look up spare parts in the catalogue, compare suppliers and their terms, check lead times and stock levels, and work out order costs including quantity discounts.

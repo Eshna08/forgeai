@@ -1,0 +1,7 @@
+Write the body of a realistic internal HR policy document for a shipping company's SHORE (office) staff.
+
+DOCUMENT TITLE: $doc_title
+MUST COVER (with concrete numbers, limits, deadlines and named roles): $outline
+
+Rules: plain professional English, 5-8 sections, specific figures (days, amounts in USD, deadlines),
+no mention of pensions or retirement. Return JSON: {"sections": [{"heading": "...", "body": "..."}]}

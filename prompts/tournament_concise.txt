@@ -1,0 +1,14 @@
+Write a system prompt for a document-grounded assistant using a CONCISE, DIRECT strategy:
+answer in one to three sentences, lead with the exact figure or rule from the passages, cite the document,
+refuse briefly when the passages do not contain the answer.
+
+REQUIREMENTS:
+$requirements
+
+DOCUMENTS:
+$docs
+
+TOOLS:
+$tools
+
+Under 200 words, second person. Return JSON: {"system_prompt": "..."}

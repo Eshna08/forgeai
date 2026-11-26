@@ -1,0 +1,62 @@
+[
+  {
+    "name": "spares_catalogue.csv",
+    "type": "csv",
+    "chars": 10526,
+    "warnings": [],
+    "columns": [
+      "part_id",
+      "name",
+      "category",
+      "supplier",
+      "unit_price",
+      "lead_time_days",
+      "stock"
+    ],
+    "n_rows": 64,
+    "sample_rows": [
+      {
+        "part_id": "SP-0001",
+        "name": "Fuel injector nozzle",
+        "category": "Main Engine",
+        "supplier": "Asia Pacific Ship Parts",
+        "unit_price": "8551.64",
+        "lead_time_days": "28",
+        "stock": "0"
+      },
+      {
+        "part_id": "SP-0002",
+        "name": "Cylinder liner",
+        "category": "Main Engine",
+        "supplier": "Nordic Marine Supply",
+        "unit_price": "7462.96",
+        "lead_time_days": "5",
+        "stock": "6"
+      },
+      {
+        "part_id": "SP-0003",
+        "name": "Piston ring set",
+        "category": "Main Engine",
+        "supplier": "Global Engine Components",
+        "unit_price": "898.79",
+        "lead_time_days": "10",
+        "stock": "0"
+      }
+    ],
+    "summary": "CSV table with 64 rows; columns: part_id, name, category, supplier, unit_price, lead_time_days, stock"
+  },
+  {
+    "name": "supplier_a_terms.pdf",
+    "type": "pdf",
+    "chars": 861,
+    "warnings": [],
+    "summary": "Nordic Marine Supply - Terms of Supply Volume Discounts Nordic Marine Supply grants a 5% discount on orders above USD 5,000 and a 10% discount on orders above USD 20,000. Discounts apply to the order total before freight. Minimum Order The minimum order value is USD 500. Orders below the minimum inc"
+  },
+  {
+    "name": "supplier_b_terms.pdf",
+    "type": "pdf",
+    "chars": 656,
+    "warnings": [],
+    "summary": "Asia Pacific Ship Parts - Supplier Terms Volume Discounts Asia Pacific Ship Parts offers a 7% discount on orders above USD 10,000. There is no discount on orders below USD 10,000. Minimum Order The minimum order value is USD 1,000. Delivery Delivery is FOB Singapore. Standard dispatch is within 5 wo"
+  }
+]

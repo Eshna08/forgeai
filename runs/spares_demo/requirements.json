@@ -1,0 +1,99 @@
+{
+  "title": "Assistant for our ship superintendents",
+  "scope": "I need a procurement assistant for our ship superintendents: look up spare parts in the catalogue, compare suppliers and their terms, check lead times and stock levels, and work out order costs including quantity discounts.",
+  "audience": "our ship superintendents",
+  "tone": "professional, friendly and concise",
+  "must_answer": [
+    "look up spare parts in the catalogue",
+    "compare suppliers and their terms",
+    "check lead times and stock levels",
+    "work out order costs including quantity discounts"
+  ],
+  "must_refuse": [
+    "personal or confidential data about individual people",
+    "legal or medical advice"
+  ],
+  "out_of_scope_behavior": "Politely decline and say the documents do not cover it.",
+  "clarifications": [
+    {
+      "question": "Who exactly is the primary audience for this assistant?",
+      "answer": "our ship superintendents, as stated in the brief.",
+      "answered_by": "forgeai"
+    },
+    {
+      "question": "What tone should the assistant use with users?",
+      "answer": "Professional, friendly and concise.",
+      "answered_by": "forgeai"
+    },
+    {
+      "question": "Are there topics the assistant must never discuss?",
+      "answer": "Anything not covered by the documents, and personal data about individuals.",
+      "answered_by": "forgeai"
+    },
+    {
+      "question": "Should every answer cite the source document?",
+      "answer": "Yes, always cite the source document.",
+      "answered_by": "forgeai"
+    },
+    {
+      "question": "How should the assistant respond to questions the documents do not cover?",
+      "answer": "Politely decline and suggest contacting the responsible team.",
+      "answered_by": "forgeai"
+    }
+  ],
+  "flags": [
+    {
+      "type": "groundability",
+      "topic": "look up spare parts in the catalogue",
+      "verdict": "supported",
+      "retrieval_confidence": 0.887,
+      "threshold": 0.481,
+      "llm_verdict": "supported",
+      "reason": "100% of topic terms appear in the retrieved passages",
+      "evidence": [
+        "spares_catalogue.csv#16",
+        "spares_catalogue.csv#3"
+      ]
+    },
+    {
+      "type": "groundability",
+      "topic": "compare suppliers and their terms",
+      "verdict": "supported",
+      "retrieval_confidence": 0.833,
+      "threshold": 0.481,
+      "llm_verdict": "supported",
+      "reason": "100% of topic terms appear in the retrieved passages",
+      "evidence": [
+        "supplier_a_terms.pdf#1",
+        "supplier_b_terms.pdf#0"
+      ]
+    },
+    {
+      "type": "groundability",
+      "topic": "check lead times and stock levels",
+      "verdict": "supported",
+      "retrieval_confidence": 0.825,
+      "threshold": 0.481,
+      "llm_verdict": "supported",
+      "reason": "100% of topic terms appear in the retrieved passages",
+      "evidence": [
+        "spares_catalogue.csv#7",
+        "spares_catalogue.csv#5"
+      ]
+    },
+    {
+      "type": "groundability",
+      "topic": "work out order costs including quantity discounts",
+      "verdict": "partial",
+      "retrieval_confidence": 0.603,
+      "threshold": 0.481,
+      "llm_verdict": "partial",
+      "reason": "50% of topic terms appear in the retrieved passages",
+      "evidence": [
+        "supplier_a_terms.pdf#0",
+        "supplier_b_terms.pdf#0"
+      ],
+      "message": "only partially supported - agent must answer only what the documents state"
+    }
+  ]
+}

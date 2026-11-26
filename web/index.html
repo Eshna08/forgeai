@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1363FA">
+  <meta name="description" content="ForgeAI turns a one-paragraph brief and your documents into a tested, self-improving chat agent with an honest quality report.">
+  <title>ForgeAI · The agent that builds agents</title>
+  <script>
+    // Apply the saved theme before first paint (no flash). Values: "light" | "dark" | absent = follow the system.
+    try { const t = localStorage.getItem("forge-theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div id="loader" class="loader" role="status" aria-label="Loading ForgeAI">
+    <div class="loader-inner">
+      <svg class="loader-mark" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5CC0FF"/><stop offset="1" stop-color="#1363FA"/></linearGradient></defs><path d="M24 4 42 14v20L24 44 6 34V14z" fill="none" stroke="url(#lg)" stroke-width="3" stroke-linejoin="round"/><path d="M14 28c3.3 2.7 6.7 2.7 10 0s6.7-2.7 10 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M24 12v10M19 17h10" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>
+      <div class="loader-pct" id="loader-pct">0%</div>
+      <div class="loader-bar"><span id="loader-bar"></span></div>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#/" aria-label="ForgeAI home">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4 42 14v20L24 44 6 34V14z" fill="none" stroke="#1363FA" stroke-width="3.5" stroke-linejoin="round"/><path d="M14 28c3.3 2.7 6.7 2.7 10 0s6.7-2.7 10 0" fill="none" stroke="#2EA3F2" stroke-width="3.5" stroke-linecap="round"/><path d="M24 12v10M19 17h10" stroke="#1363FA" stroke-width="3.5" stroke-linecap="round"/></svg>
+        <span>ForgeAI<small>the agent that builds agents</small></span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#/" data-route="home">Home</a>
+        <a href="#/build" data-route="build">Build</a>
+        <a href="#/chat" data-route="chat">Chat</a>
+        <a href="#/runs" data-route="runs">Runs</a>
+        <a href="#/requirements" data-route="requirements">Requirements</a>
+      </nav>
+      <button class="icon-btn" id="how-btn" type="button" aria-label="How ForgeAI works" title="How it works">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/></svg>
+      </button>
+      <button class="icon-btn" id="theme-btn" type="button" aria-label="Switch to dark mode" title="Toggle dark mode"></button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1"></main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="row">
+        <div>
+          <h2>Have a brief? Get a tested agent.</h2>
+          <p class="small">Describe the assistant you need, add your documents, and ForgeAI does the rest, including telling you what still fails.</p>
+        </div>
+        <span class="spacer"></span>
+        <a class="btn btn-light" href="#/build">Build an agent</a>
+      </div>
+      <p class="small">ForgeAI · assignment build for OceanAI · runs on any OpenAI-compatible model · no data leaves this server except LLM calls you configure.</p>
+    </div>
+  </footer>
+
+  <div id="toasts" class="toasts" aria-live="polite" aria-atomic="false"></div>
+  <div id="modal-root"></div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

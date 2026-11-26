@@ -1,0 +1,100 @@
+{
+  "title": "Assistant for shore staff",
+  "scope": "I need an assistant that answers HR policy questions for shore staff: leave entitlements, the code of conduct, travel and expense claims, and our employee pension and retirement plan.",
+  "audience": "shore staff",
+  "tone": "professional, friendly and concise",
+  "must_answer": [
+    "leave entitlements",
+    "code of conduct",
+    "travel and expense claims"
+  ],
+  "must_refuse": [
+    "personal or confidential data about individual people",
+    "legal or medical advice",
+    "our employee pension and retirement plan"
+  ],
+  "out_of_scope_behavior": "Politely decline and say the documents do not cover it.",
+  "clarifications": [
+    {
+      "question": "Who exactly is the primary audience for this assistant?",
+      "answer": "shore staff, as stated in the brief.",
+      "answered_by": "forgeai"
+    },
+    {
+      "question": "What tone should the assistant use with users?",
+      "answer": "Professional, friendly and concise.",
+      "answered_by": "forgeai"
+    },
+    {
+      "question": "Are there topics the assistant must never discuss?",
+      "answer": "Anything not covered by the documents, and personal data about individuals.",
+      "answered_by": "forgeai"
+    },
+    {
+      "question": "Should every answer cite the source document?",
+      "answer": "Yes, always cite the source document.",
+      "answered_by": "forgeai"
+    },
+    {
+      "question": "How should the assistant respond to questions the documents do not cover?",
+      "answer": "Politely decline and suggest contacting the responsible team.",
+      "answered_by": "forgeai"
+    }
+  ],
+  "flags": [
+    {
+      "type": "groundability",
+      "topic": "leave entitlements",
+      "verdict": "partial",
+      "retrieval_confidence": 0.578,
+      "threshold": 0.518,
+      "llm_verdict": "partial",
+      "reason": "50% of topic terms appear in the retrieved passages",
+      "evidence": [
+        "leave_policy.pdf#0",
+        "leave_policy.pdf#2"
+      ],
+      "message": "only partially supported - agent must answer only what the documents state"
+    },
+    {
+      "type": "groundability",
+      "topic": "code of conduct",
+      "verdict": "supported",
+      "retrieval_confidence": 0.855,
+      "threshold": 0.518,
+      "llm_verdict": "supported",
+      "reason": "100% of topic terms appear in the retrieved passages",
+      "evidence": [
+        "code_of_conduct.docx#0",
+        "code_of_conduct.docx#2"
+      ]
+    },
+    {
+      "type": "groundability",
+      "topic": "travel and expense claims",
+      "verdict": "supported",
+      "retrieval_confidence": 0.919,
+      "threshold": 0.518,
+      "llm_verdict": "supported",
+      "reason": "100% of topic terms appear in the retrieved passages",
+      "evidence": [
+        "travel_expenses_policy.md#1",
+        "travel_expenses_policy.md#0"
+      ]
+    },
+    {
+      "type": "groundability",
+      "topic": "our employee pension and retirement plan",
+      "verdict": "unsupported",
+      "retrieval_confidence": 0.432,
+      "threshold": 0.518,
+      "llm_verdict": "unsupported",
+      "reason": "25% of topic terms appear in the retrieved passages",
+      "evidence": [
+        "code_of_conduct.docx#2",
+        "code_of_conduct.docx#0"
+      ],
+      "message": "documents do not support this topic - moved to must-refuse"
+    }
+  ]
+}

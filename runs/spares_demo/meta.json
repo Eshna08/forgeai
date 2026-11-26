@@ -1,0 +1,110 @@
+{
+  "run_id": "spares_demo",
+  "brief": "I need a procurement assistant for our ship superintendents: look up spare parts in the catalogue, compare suppliers and their terms, check lead times and stock levels, and work out order costs including quantity discounts.",
+  "docs_dir": "demos/spares/docs",
+  "seed": 42,
+  "options": {
+    "non_interactive": true,
+    "approve": false,
+    "tournament": true,
+    "seed": 42,
+    "max_tokens": null,
+    "max_seconds": null,
+    "max_iterations": 3,
+    "target_score": 100.0,
+    "judge_mode": "hybrid"
+  },
+  "provider": "mock",
+  "models": {
+    "agent": "mock-agent",
+    "judge": "mock-judge"
+  },
+  "started_at": "2026-11-27T02:51:04",
+  "status": "completed",
+  "finished_at": "2026-11-27T02:51:09",
+  "stop_reason": "early stop: iteration 1 gained 0.0 points (< 1)",
+  "usage": {
+    "tokens": 230295,
+    "calls": 219,
+    "max_tokens": 600000,
+    "elapsed_s": 5.3,
+    "max_seconds": 2400.0,
+    "fallbacks": 0,
+    "validation_retries": 0,
+    "transport_retries": 0,
+    "cache_hits": 64,
+    "by_task": {
+      "intake_questions": {
+        "calls": 1,
+        "tokens": 818
+      },
+      "intake_self_answer": {
+        "calls": 1,
+        "tokens": 795
+      },
+      "requirements": {
+        "calls": 1,
+        "tokens": 1333
+      },
+      "groundability": {
+        "calls": 4,
+        "tokens": 3406
+      },
+      "tool_proposal": {
+        "calls": 1,
+        "tokens": 773
+      },
+      "system_prompt": {
+        "calls": 1,
+        "tokens": 892
+      },
+      "eval_answerable": {
+        "calls": 11,
+        "tokens": 4545
+      },
+      "eval_cross": {
+        "calls": 3,
+        "tokens": 1723
+      },
+      "eval_ambiguous": {
+        "calls": 3,
+        "tokens": 696
+      },
+      "eval_false_premise": {
+        "calls": 2,
+        "tokens": 728
+      },
+      "eval_out_of_scope": {
+        "calls": 1,
+        "tokens": 364
+      },
+      "judge": {
+        "calls": 84,
+        "tokens": 69124
+      },
+      "tournament_strict": {
+        "calls": 1,
+        "tokens": 813
+      },
+      "agent_answer": {
+        "calls": 102,
+        "tokens": 141913
+      },
+      "tournament_concise": {
+        "calls": 1,
+        "tokens": 827
+      },
+      "tournament_stepwise": {
+        "calls": 1,
+        "tokens": 857
+      },
+      "prompt_patch": {
+        "calls": 1,
+        "tokens": 688
+      }
+    }
+  },
+  "heldout_score": 87.5,
+  "dev_score": 95.5,
+  "error": null
+}

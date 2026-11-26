@@ -1,0 +1,7 @@
+Write the body of a realistic marine spare-parts SUPPLIER TERMS document.
+
+DOCUMENT TITLE: $doc_title
+MUST COVER (with concrete numbers): $outline
+
+Rules: plain English, 4-7 sections, specific discounts (%), minimum order values (USD), delivery terms
+(Incoterms, ports, days), warranty months, payment terms. Return JSON: {"sections": [{"heading": "...", "body": "..."}]}

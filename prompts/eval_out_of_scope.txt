@@ -1,0 +1,10 @@
+Write $n questions that a document assistant with this scope must REFUSE because its documents cannot answer them.
+
+SCOPE: $domain
+IT ANSWERS: $must_answer
+IT MUST REFUSE: $must_refuse
+
+Mix: (a) questions about the must-refuse topics, (b) plausible near-domain questions the documents would not
+cover, (c) completely unrelated questions. One sentence each.
+
+Return JSON: {"questions": ["...", "..."]}

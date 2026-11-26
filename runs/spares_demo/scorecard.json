@@ -1,0 +1,146 @@
+{
+  "run_id": "spares_demo",
+  "status": "completed",
+  "provider": "mock",
+  "models": {
+    "agent": "mock-agent",
+    "judge": "mock-judge"
+  },
+  "seed": 42,
+  "dev_score": 95.5,
+  "heldout_score": 87.5,
+  "heldout_n": 8,
+  "dev_n": 22,
+  "baseline_dev_score": 95.5,
+  "stop_reason": "early stop: iteration 1 gained 0.0 points (< 1)",
+  "iterations": [
+    {
+      "iteration": 0,
+      "kind": "baseline",
+      "category": null,
+      "change": null,
+      "score_before": null,
+      "score_after": 95.5,
+      "decision": null,
+      "taxonomy": {
+        "prompt_defect": 1
+      },
+      "taxonomy_after": null,
+      "tokens": 61691,
+      "latency_s": 0.08
+    },
+    {
+      "iteration": 1,
+      "kind": "fix",
+      "category": "prompt_defect",
+      "change": "prompt patch: +2 rule(s) (Failures show facts present in retrieved context but missing from answers.)",
+      "score_before": 95.5,
+      "score_after": 95.5,
+      "decision": "kept",
+      "taxonomy": null,
+      "taxonomy_after": {
+        "prompt_defect": 1
+      },
+      "tokens": 35466,
+      "latency_s": 0.06
+    }
+  ],
+  "taxonomy_final_heldout": {
+    "prompt_defect": 1
+  },
+  "tools_attached": [
+    "csv_lookup",
+    "calculator"
+  ],
+  "tools_rejected": [
+    "current_date",
+    "weather"
+  ],
+  "judge_selftest": {
+    "n": 7,
+    "n_correct": 7,
+    "all_correct": true
+  },
+  "tournament_winner": "stepwise",
+  "budget": {
+    "tokens": 230295,
+    "calls": 219,
+    "max_tokens": 600000,
+    "elapsed_s": 5.3,
+    "max_seconds": 2400.0,
+    "fallbacks": 0,
+    "validation_retries": 0,
+    "transport_retries": 0,
+    "cache_hits": 64,
+    "by_task": {
+      "intake_questions": {
+        "calls": 1,
+        "tokens": 818
+      },
+      "intake_self_answer": {
+        "calls": 1,
+        "tokens": 795
+      },
+      "requirements": {
+        "calls": 1,
+        "tokens": 1333
+      },
+      "groundability": {
+        "calls": 4,
+        "tokens": 3406
+      },
+      "tool_proposal": {
+        "calls": 1,
+        "tokens": 773
+      },
+      "system_prompt": {
+        "calls": 1,
+        "tokens": 892
+      },
+      "eval_answerable": {
+        "calls": 11,
+        "tokens": 4545
+      },
+      "eval_cross": {
+        "calls": 3,
+        "tokens": 1723
+      },
+      "eval_ambiguous": {
+        "calls": 3,
+        "tokens": 696
+      },
+      "eval_false_premise": {
+        "calls": 2,
+        "tokens": 728
+      },
+      "eval_out_of_scope": {
+        "calls": 1,
+        "tokens": 364
+      },
+      "judge": {
+        "calls": 84,
+        "tokens": 69124
+      },
+      "tournament_strict": {
+        "calls": 1,
+        "tokens": 813
+      },
+      "agent_answer": {
+        "calls": 102,
+        "tokens": 141913
+      },
+      "tournament_concise": {
+        "calls": 1,
+        "tokens": 827
+      },
+      "tournament_stepwise": {
+        "calls": 1,
+        "tokens": 857
+      },
+      "prompt_patch": {
+        "calls": 1,
+        "tokens": 688
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+You are grading one answer of a document-grounded assistant. Grade strictly against the rubric.
+
+Rubric:
+- correct: true only if the answer states every EXPECTED FACT (paraphrase and different number formatting are fine).
+- grounded: true only if EVERY claim in the answer is supported by the CONTEXT. Any extra claim that is not in
+  the CONTEXT makes grounded=false, however plausible it sounds.
+- Length and style do not matter: a long answer gets no credit for being long, a short one is not penalised.
+- List every unsupported claim in unsupported_claims.
+
+QUESTION:
+$question
+
+EXPECTED FACTS:
+$expected_facts
+
+$first_label:
+"""
+$first_block
+"""
+
+$second_label:
+"""
+$second_block
+"""
+
+Return JSON: {"correct": true, "grounded": true, "unsupported_claims": [], "reason": "one sentence"}

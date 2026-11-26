@@ -1,0 +1,23 @@
+Write a structured requirements document for a document-grounded chat assistant.
+
+BRIEF:
+$brief
+
+DOCUMENT INVENTORY:
+$docs
+
+CLARIFYING QUESTIONS AND ANSWERS:
+$clarifications
+
+Fields:
+- title: short name of the assistant
+- scope: 1-2 sentences, what the assistant does
+- audience: who uses it
+- tone: e.g. "professional and concise"
+- must_answer: 3-8 short topic phrases the requester explicitly wants covered. Include EVERY topic named in the
+  brief, even if you suspect the documents do not cover it (a later check verifies coverage - do not filter here).
+- must_refuse: short topic phrases the assistant must decline (things outside scope, personal data, advice it is
+  not qualified to give, anything the requester said to avoid)
+- out_of_scope_behavior: one sentence on how to decline
+
+Return JSON with exactly these keys: title, scope, audience, tone, must_answer, must_refuse, out_of_scope_behavior.

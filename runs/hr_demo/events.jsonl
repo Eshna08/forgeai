@@ -1,0 +1,26 @@
+{"type": "stage_started", "ts": "2026-11-27T02:51:01", "stage": "ingest"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:01", "stage": "ingest", "seconds": 0.23, "tokens": 0}
+{"type": "stage_started", "ts": "2026-11-27T02:51:02", "stage": "intake"}
+{"type": "questions_asked", "ts": "2026-11-27T02:51:02", "questions": ["Who exactly is the primary audience for this assistant?", "What tone should the assistant use with users?", "Are there topics the assistant must never discuss?", "Should every answer cite the source document?", "How should the assistant respond to questions the documents do not cover?"], "dropped": [{"question": "Do you want an assistant that answers HR policy questions for shore staff: leave entitlements,?", "reason": "answerable from the brief"}, {"question": "Which languages must the assistant support?", "reason": "over the 5-question cap"}]}
+{"type": "stage_done", "ts": "2026-11-27T02:51:02", "stage": "intake", "seconds": 0.03, "tokens": 2434}
+{"type": "stage_started", "ts": "2026-11-27T02:51:02", "stage": "groundability"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:02", "stage": "groundability", "seconds": 0.03, "tokens": 3422}
+{"type": "flags", "ts": "2026-11-27T02:51:02", "kind": "groundability", "flags": [{"type": "groundability", "topic": "leave entitlements", "verdict": "partial", "retrieval_confidence": 0.578, "threshold": 0.518, "llm_verdict": "partial", "reason": "50% of topic terms appear in the retrieved passages", "evidence": ["leave_policy.pdf#0", "leave_policy.pdf#2"], "message": "only partially supported - agent must answer only what the documents state"}, {"type": "groundability", "topic": "code of conduct", "verdict": "supported", "retrieval_confidence": 0.855, "threshold": 0.518, "llm_verdict": "supported", "reason": "100% of topic terms appear in the retrieved passages", "evidence": ["code_of_conduct.docx#0", "code_of_conduct.docx#2"]}, {"type": "groundability", "topic": "travel and expense claims", "verdict": "supported", "retrieval_confidence": 0.919, "threshold": 0.518, "llm_verdict": "supported", "reason": "100% of topic terms appear in the retrieved passages", "evidence": ["travel_expenses_policy.md#1", "travel_expenses_policy.md#0"]}, {"type": "groundability", "topic": "our employee pension and retirement plan", "verdict": "unsupported", "retrieval_confidence": 0.432, "threshold": 0.518, "llm_verdict": "unsupported", "reason": "25% of topic terms appear in the retrieved passages", "evidence": ["code_of_conduct.docx#2", "code_of_conduct.docx#0"], "message": "documents do not support this topic - moved to must-refuse"}]}
+{"type": "stage_started", "ts": "2026-11-27T02:51:02", "stage": "generate"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:02", "stage": "generate", "seconds": 0.31, "tokens": 1438}
+{"type": "flags", "ts": "2026-11-27T02:51:02", "kind": "tools", "attached": [], "rejected": [{"name": "csv_lookup", "reason": "no CSV file in the document folder"}, {"name": "calculator", "reason": "brief involves no costs, quantities or arithmetic"}, {"name": "current_date", "reason": "brief involves no dates or deadlines"}, {"name": "weather", "reason": "brief never mentions weather, sea state or travel conditions"}]}
+{"type": "stage_started", "ts": "2026-11-27T02:51:02", "stage": "evalgen"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:02", "stage": "evalgen", "seconds": 0.06, "tokens": 10549}
+{"type": "stage_started", "ts": "2026-11-27T02:51:02", "stage": "judge_selftest"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:02", "stage": "judge_selftest", "seconds": 0.02, "tokens": 3072}
+{"type": "stage_started", "ts": "2026-11-27T02:51:02", "stage": "tournament"}
+{"type": "log", "ts": "2026-11-27T02:51:04", "message": "tournament candidate strict: score 90.9"}
+{"type": "log", "ts": "2026-11-27T02:51:04", "message": "tournament candidate concise: score 90.9"}
+{"type": "log", "ts": "2026-11-27T02:51:04", "message": "tournament candidate stepwise: score 100.0"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:04", "stage": "tournament", "seconds": 1.38, "tokens": 113682}
+{"type": "stage_started", "ts": "2026-11-27T02:51:04", "stage": "optimize"}
+{"type": "iteration_result", "ts": "2026-11-27T02:51:04", "iteration": 0, "kind": "baseline", "score_before": null, "score_after": 100.0, "taxonomy": {}, "tokens": 41642, "latency_s": 0.06}
+{"type": "stage_done", "ts": "2026-11-27T02:51:04", "stage": "optimize", "seconds": 0.0, "tokens": 0}
+{"type": "stage_started", "ts": "2026-11-27T02:51:04", "stage": "final_eval"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:04", "stage": "final_eval", "seconds": 0.11, "tokens": 18884}
+{"type": "finished", "ts": "2026-11-27T02:51:04", "run_id": "hr_demo", "status": "completed", "heldout_score": 100.0, "dev_score": 100.0, "stop_reason": "target reached (100.0 >= 100.0)", "error": null}

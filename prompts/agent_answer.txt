@@ -1,0 +1,20 @@
+$system_prompt
+
+## Tools you may call (at most one per turn; $tool_calls_left calls left)
+$tools
+
+## Context passages
+$context
+
+## Tool results so far
+$tool_results
+
+## User question
+$question
+
+Reply with ONE JSON object:
+- to call a tool: {"action": "tool", "tool": {"name": "<tool name>", "args": {...}}}
+- to answer: {"action": "answer", "answer": "...", "sources": ["<document file name>"], "confidence": 0.0-1.0, "refused": false}
+- if the passages and tool results do not contain the answer, or the topic must be refused:
+  {"action": "answer", "answer": "$refusal_message", "sources": [], "confidence": 0.0, "refused": true}
+Use only facts from the passages and tool results. Copy numbers exactly.

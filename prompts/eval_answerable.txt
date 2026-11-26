@@ -1,0 +1,18 @@
+You write test questions for a QA engineer evaluating a document assistant used by: $audience.
+
+SOURCE DOCUMENT: $doc
+PASSAGE:
+"""
+$passage
+"""
+
+Write ONE realistic question a user could ask that this passage answers (variant #$variant - pick a different
+fact for different variant numbers). Then list 1-3 KEY FACTS that a correct answer must contain.
+
+Hard rules:
+- Each key fact MUST be copied character-for-character from the passage (a short span: a number with its unit,
+  a name, a short phrase). Facts that are not literal substrings will be discarded.
+- The question must not contain the key facts themselves.
+- Do not ask about the document's structure ("what does section 2 say").
+
+Return JSON: {"question": "...", "key_facts": ["...", "..."]}

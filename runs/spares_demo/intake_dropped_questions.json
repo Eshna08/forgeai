@@ -1,0 +1,10 @@
+[
+  {
+    "question": "Do you want a procurement assistant for our ship superintendents: look up spare parts in?",
+    "reason": "answerable from the brief"
+  },
+  {
+    "question": "Which languages must the assistant support?",
+    "reason": "over the 5-question cap"
+  }
+]

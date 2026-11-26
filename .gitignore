@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+runs/*
+!runs/hr_demo/
+!runs/spares_demo/
+!runs/admissions_demo/
+runs/*/docs/
+runs/*/regress_docs/

@@ -1,0 +1,57 @@
+{
+  "proposed": [
+    {
+      "name": "csv_lookup",
+      "justification": "Could be useful for some user questions."
+    },
+    {
+      "name": "calculator",
+      "justification": "Could be useful for some user questions."
+    },
+    {
+      "name": "current_date",
+      "justification": "Could be useful for some user questions."
+    },
+    {
+      "name": "weather",
+      "justification": "Could be useful for some user questions."
+    }
+  ],
+  "attached": [
+    {
+      "name": "csv_lookup",
+      "attached_by": "llm+validator",
+      "justification": "Could be useful for some user questions.",
+      "rule": "CSV present: spares_catalogue.csv"
+    },
+    {
+      "name": "calculator",
+      "attached_by": "llm+validator",
+      "justification": "Could be useful for some user questions.",
+      "rule": "brief involves costs / quantities / totals"
+    }
+  ],
+  "rejected": [
+    {
+      "name": "current_date",
+      "proposed_by": "llm",
+      "justification": "Could be useful for some user questions.",
+      "reason": "brief involves no dates or deadlines"
+    },
+    {
+      "name": "weather",
+      "proposed_by": "llm",
+      "justification": "Could be useful for some user questions.",
+      "reason": "brief never mentions weather, sea state or travel conditions"
+    }
+  ],
+  "calibration": {
+    "threshold": 0.478,
+    "in_domain_p10": 0.899,
+    "off_topic_p90": 0.251,
+    "n_in": 25,
+    "n_off": 12,
+    "note": "separated",
+    "embedder": "fastembed"
+  }
+}

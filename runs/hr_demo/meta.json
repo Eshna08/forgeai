@@ -1,0 +1,106 @@
+{
+  "run_id": "hr_demo",
+  "brief": "I need an assistant that answers HR policy questions for shore staff: leave entitlements, the code of conduct, travel and expense claims, and our employee pension and retirement plan.",
+  "docs_dir": "demos/hr/docs",
+  "seed": 42,
+  "options": {
+    "non_interactive": true,
+    "approve": false,
+    "tournament": true,
+    "seed": 42,
+    "max_tokens": null,
+    "max_seconds": null,
+    "max_iterations": 3,
+    "target_score": 100.0,
+    "judge_mode": "hybrid"
+  },
+  "provider": "mock",
+  "models": {
+    "agent": "mock-agent",
+    "judge": "mock-judge"
+  },
+  "started_at": "2026-11-27T02:51:01",
+  "status": "completed",
+  "finished_at": "2026-11-27T02:51:04",
+  "stop_reason": "target reached (100.0 >= 100.0)",
+  "usage": {
+    "tokens": 153481,
+    "calls": 165,
+    "max_tokens": 600000,
+    "elapsed_s": 3.3,
+    "max_seconds": 2400.0,
+    "fallbacks": 0,
+    "validation_retries": 0,
+    "transport_retries": 0,
+    "cache_hits": 42,
+    "by_task": {
+      "intake_questions": {
+        "calls": 1,
+        "tokens": 660
+      },
+      "intake_self_answer": {
+        "calls": 1,
+        "tokens": 633
+      },
+      "requirements": {
+        "calls": 1,
+        "tokens": 1141
+      },
+      "groundability": {
+        "calls": 4,
+        "tokens": 3422
+      },
+      "tool_proposal": {
+        "calls": 1,
+        "tokens": 733
+      },
+      "system_prompt": {
+        "calls": 1,
+        "tokens": 705
+      },
+      "eval_answerable": {
+        "calls": 16,
+        "tokens": 6962
+      },
+      "eval_cross": {
+        "calls": 3,
+        "tokens": 1792
+      },
+      "eval_ambiguous": {
+        "calls": 3,
+        "tokens": 707
+      },
+      "eval_false_premise": {
+        "calls": 2,
+        "tokens": 747
+      },
+      "eval_out_of_scope": {
+        "calls": 1,
+        "tokens": 341
+      },
+      "judge": {
+        "calls": 74,
+        "tokens": 65228
+      },
+      "tournament_strict": {
+        "calls": 1,
+        "tokens": 625
+      },
+      "agent_answer": {
+        "calls": 54,
+        "tokens": 68476
+      },
+      "tournament_concise": {
+        "calls": 1,
+        "tokens": 640
+      },
+      "tournament_stepwise": {
+        "calls": 1,
+        "tokens": 669
+      }
+    }
+  },
+  "heldout_score": 100.0,
+  "dev_score": 100.0,
+  "error": null
+}

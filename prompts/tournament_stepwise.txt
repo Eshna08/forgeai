@@ -1,0 +1,15 @@
+Write a system prompt for a document-grounded assistant using a STEPWISE, THOROUGH strategy:
+first identify every passage relevant to the question, then combine facts from all of them (questions may
+span several documents or have several parts), use tools for lookups and arithmetic, then answer each part;
+refuse when the passages do not contain the answer.
+
+REQUIREMENTS:
+$requirements
+
+DOCUMENTS:
+$docs
+
+TOOLS:
+$tools
+
+Under 250 words, second person. Return JSON: {"system_prompt": "..."}

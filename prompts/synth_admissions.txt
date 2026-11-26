@@ -1,0 +1,7 @@
+Write the body of a realistic UNIVERSITY ADMISSIONS document for prospective students.
+
+DOCUMENT TITLE: $doc_title
+MUST COVER (with concrete numbers and dates): $outline
+
+Rules: plain English, 4-7 sections, specific deadlines, entry grades, test scores, fees in GBP, scholarship
+amounts and eligibility. Return JSON: {"sections": [{"heading": "...", "body": "..."}]}

@@ -1,0 +1,1657 @@
+{
+  "dev_score": 100.0,
+  "heldout_score": 87.5,
+  "results": [
+    {
+      "case_id": "A01",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the admissions policy, what completes this statement: \"Decisions on applications received by ___ January are made by 31 March.\"?",
+      "expected_key_facts": [
+        "31"
+      ],
+      "should_refuse": false,
+      "answer": "Decisions on applications received by 31 January are made by 31 March.",
+      "sources": [
+        "admissions_policy.pdf"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.741,
+      "retrieval_confidence": 0.781,
+      "retrieved": [
+        "admissions_policy.pdf#1",
+        "admissions_policy.pdf#0",
+        "fees_and_scholarships.docx#1",
+        "international_students.txt#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A01",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "31"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A02",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the fees and scholarships, what completes this statement: \"Scholarship applications close on ___ May.\"?",
+      "expected_key_facts": [
+        "1"
+      ],
+      "should_refuse": false,
+      "answer": "Scholarship applications close on 1 May.",
+      "sources": [
+        "fees_and_scholarships.docx"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.629,
+      "retrieval_confidence": 0.759,
+      "retrieved": [
+        "fees_and_scholarships.docx#1",
+        "fees_and_scholarships.docx#0",
+        "admissions_policy.pdf#0",
+        "admissions_policy.pdf#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A02",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "1"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A03",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the international students, what completes this statement: \"International applicants whose first language is not English need an IELTS Academic score of ___ overall with no component below 6.0.\"?",
+      "expected_key_facts": [
+        "6.5"
+      ],
+      "should_refuse": false,
+      "answer": "International applicants whose first language is not English need an IELTS Academic score of 6.5 overall with no component below 6.0.",
+      "sources": [
+        "international_students.txt"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.854,
+      "retrieval_confidence": 0.878,
+      "retrieved": [
+        "international_students.txt#0",
+        "international_students.txt#1",
+        "admissions_policy.pdf#0",
+        "fees_and_scholarships.docx#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A03",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "6.5"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A04",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the admissions policy, what completes this statement: \"Applications for September entry open on ___ September of the previous year.\"?",
+      "expected_key_facts": [
+        "1"
+      ],
+      "should_refuse": false,
+      "answer": "Applications for September entry open on 1 September of the previous year.",
+      "sources": [
+        "admissions_policy.pdf"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.733,
+      "retrieval_confidence": 0.797,
+      "retrieved": [
+        "admissions_policy.pdf#0",
+        "admissions_policy.pdf#1",
+        "fees_and_scholarships.docx#1",
+        "international_students.txt#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A04",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "1"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A05",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the fees and scholarships, what completes this statement: \"Annual tuition for home students is ___.\"?",
+      "expected_key_facts": [
+        "GBP 9,250"
+      ],
+      "should_refuse": false,
+      "answer": "Annual tuition for home students is GBP 9,250.",
+      "sources": [
+        "fees_and_scholarships.docx"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.63,
+      "retrieval_confidence": 0.761,
+      "retrieved": [
+        "fees_and_scholarships.docx#0",
+        "fees_and_scholarships.docx#1",
+        "admissions_policy.pdf#0",
+        "admissions_policy.pdf#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A05",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "GBP 9,250"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A06",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the international students, what completes this statement: \"The university issues a Confirmation of Acceptance for Studies once the offer is unconditional and a deposit of ___ has been paid.\"?",
+      "expected_key_facts": [
+        "GBP 3,000"
+      ],
+      "should_refuse": false,
+      "answer": "The university issues a Confirmation of Acceptance for Studies once the offer is unconditional and a deposit of GBP 3,000 has been paid.",
+      "sources": [
+        "international_students.txt"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.763,
+      "retrieval_confidence": 0.816,
+      "retrieved": [
+        "international_students.txt#1",
+        "fees_and_scholarships.docx#1",
+        "admissions_policy.pdf#0",
+        "admissions_policy.pdf#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A06",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "GBP 3,000"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A07",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the admissions policy, what completes this statement: \"Applicants must reply to offers by ___ June.\"?",
+      "expected_key_facts": [
+        "1"
+      ],
+      "should_refuse": false,
+      "answer": "Applicants must reply to offers by 1 June.",
+      "sources": [
+        "admissions_policy.pdf"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.65,
+      "retrieval_confidence": 0.73,
+      "retrieved": [
+        "admissions_policy.pdf#1",
+        "admissions_policy.pdf#0",
+        "international_students.txt#0",
+        "fees_and_scholarships.docx#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A07",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "1"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A08",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the fees and scholarships, what completes this statement: \"Recipients are notified by ___ June.\"?",
+      "expected_key_facts": [
+        "15"
+      ],
+      "should_refuse": false,
+      "answer": "Recipients are notified by 15 June.",
+      "sources": [
+        "fees_and_scholarships.docx"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.581,
+      "retrieval_confidence": 0.732,
+      "retrieved": [
+        "fees_and_scholarships.docx#1",
+        "fees_and_scholarships.docx#0",
+        "admissions_policy.pdf#1",
+        "admissions_policy.pdf#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A08",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "15"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A12",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the international students, what completes this statement: \"International students are met at the airport during the arrival week, which begins on ___ September.\"?",
+      "expected_key_facts": [
+        "15"
+      ],
+      "should_refuse": false,
+      "answer": "International students are met at the airport during the arrival week, which begins on 15 September.",
+      "sources": [
+        "international_students.txt"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.818,
+      "retrieval_confidence": 0.815,
+      "retrieved": [
+        "international_students.txt#1",
+        "international_students.txt#0",
+        "admissions_policy.pdf#0",
+        "admissions_policy.pdf#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A12",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "15"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A13",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the fees and scholarships, what completes this statement: \"Tuition can be paid in ___ in October, January and April.\"?",
+      "expected_key_facts": [
+        "3 instalments"
+      ],
+      "should_refuse": false,
+      "answer": "Tuition can be paid in 3 instalments in October, January and April.",
+      "sources": [
+        "fees_and_scholarships.docx"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.676,
+      "retrieval_confidence": 0.793,
+      "retrieved": [
+        "fees_and_scholarships.docx#1",
+        "fees_and_scholarships.docx#0",
+        "admissions_policy.pdf#0",
+        "international_students.txt#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A13",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "3 instalments"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "E01",
+      "type": "edge",
+      "subtype": "cross_document",
+      "split": "dev",
+      "question": "Two-part question: (a) according to the admissions policy, what completes \"Applications for September entry open on ___ September of the previous year.\"; and (b) according to the fees and scholarships, what completes \"Scholarship applications close on ___ May.\"?",
+      "expected_key_facts": [
+        "1",
+        "1"
+      ],
+      "should_refuse": false,
+      "answer": "Scholarship applications close on 1 May.",
+      "sources": [
+        "fees_and_scholarships.docx"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.412,
+      "retrieval_confidence": 0.624,
+      "retrieved": [
+        "fees_and_scholarships.docx#1",
+        "admissions_policy.pdf#0",
+        "fees_and_scholarships.docx#0",
+        "admissions_policy.pdf#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "E01",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "1",
+            "1"
+          ],
+          "source_overlap": 0.5,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "2/2 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "2/2 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "E02",
+      "type": "edge",
+      "subtype": "cross_document",
+      "split": "dev",
+      "question": "Two-part question: (a) according to the fees and scholarships, what completes \"Recipients are notified by ___ June.\"; and (b) according to the international students, what completes \"International students are met at the airport during the arrival week, which begins on ___ September.\"?",
+      "expected_key_facts": [
+        "15",
+        "15"
+      ],
+      "should_refuse": false,
+      "answer": "International students are met at the airport during the arrival week, which begins on 15 September.",
+      "sources": [
+        "international_students.txt"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.557,
+      "retrieval_confidence": 0.644,
+      "retrieved": [
+        "international_students.txt#1",
+        "fees_and_scholarships.docx#1",
+        "fees_and_scholarships.docx#0",
+        "international_students.txt#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "E02",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "15",
+            "15"
+          ],
+          "source_overlap": 0.5,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "2/2 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "2/2 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "E04",
+      "type": "edge",
+      "subtype": "ambiguous_phrasing",
+      "split": "dev",
+      "question": "quick one - so basically \"Decisions on applctns received by ___ January are made by 31 March.\"??",
+      "expected_key_facts": [
+        "31"
+      ],
+      "should_refuse": false,
+      "answer": "Decisions on applications received by 31 January are made by 31 March.",
+      "sources": [
+        "admissions_policy.pdf"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.642,
+      "retrieval_confidence": 0.685,
+      "retrieved": [
+        "admissions_policy.pdf#1",
+        "admissions_policy.pdf#0",
+        "fees_and_scholarships.docx#1",
+        "international_students.txt#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "E04",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "31"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "E06",
+      "type": "edge",
+      "subtype": "ambiguous_phrasing",
+      "split": "dev",
+      "question": "quick one - so basically \"Intrntnl applicants whose first language is not English need an IELTS Academic score of ___ overall with no component below 6.0.\"??",
+      "expected_key_facts": [
+        "6.5"
+      ],
+      "should_refuse": false,
+      "answer": "International applicants whose first language is not English need an IELTS Academic score of 6.5 overall with no component below 6.0.",
+      "sources": [
+        "international_students.txt"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.793,
+      "retrieval_confidence": 0.806,
+      "retrieved": [
+        "international_students.txt#0",
+        "admissions_policy.pdf#1",
+        "admissions_policy.pdf#0",
+        "international_students.txt#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "E06",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "6.5"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "E07",
+      "type": "edge",
+      "subtype": "false_premise",
+      "split": "dev",
+      "question": "I was told that \"Applications for September entry open on 5 September of the previous year.\" - is that right?",
+      "expected_key_facts": [
+        "1"
+      ],
+      "should_refuse": false,
+      "answer": "Applications for September entry open on 1 September of the previous year.",
+      "sources": [
+        "admissions_policy.pdf"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.693,
+      "retrieval_confidence": 0.716,
+      "retrieved": [
+        "admissions_policy.pdf#0",
+        "admissions_policy.pdf#1",
+        "fees_and_scholarships.docx#0",
+        "fees_and_scholarships.docx#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "E07",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "1"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "E08",
+      "type": "edge",
+      "subtype": "false_premise",
+      "split": "dev",
+      "question": "I was told that \"Recipients are notified by 33 June.\" - is that right?",
+      "expected_key_facts": [
+        "15"
+      ],
+      "should_refuse": false,
+      "answer": "Recipients are notified by 15 June.",
+      "sources": [
+        "fees_and_scholarships.docx"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.529,
+      "retrieval_confidence": 0.559,
+      "retrieved": [
+        "fees_and_scholarships.docx#1",
+        "international_students.txt#1",
+        "admissions_policy.pdf#0",
+        "admissions_policy.pdf#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "E08",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "15"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "O01",
+      "type": "out_of_scope",
+      "subtype": "must_refuse_topic",
+      "split": "dev",
+      "question": "Can you tell me about personal or confidential data about individual people?",
+      "expected_key_facts": [],
+      "should_refuse": true,
+      "answer": "I'm sorry, I can't answer that from the documents I have access to.",
+      "sources": [],
+      "refused": true,
+      "gate": "retrieval",
+      "confidence": 0.742,
+      "retrieval_confidence": 0.258,
+      "retrieved": [
+        "admissions_policy.pdf#1",
+        "admissions_policy.pdf#0",
+        "international_students.txt#0",
+        "international_students.txt#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "O01",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": null,
+          "facts_found": [],
+          "source_overlap": null,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": null,
+        "decided_by": "deterministic",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "O04",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "split": "dev",
+      "question": "Can you write me a poem about the ocean?",
+      "expected_key_facts": [],
+      "should_refuse": true,
+      "answer": "I'm sorry, I can't answer that from the documents I have access to.",
+      "sources": [],
+      "refused": true,
+      "gate": "retrieval",
+      "confidence": 0.794,
+      "retrieval_confidence": 0.206,
+      "retrieved": [
+        "fees_and_scholarships.docx#1",
+        "international_students.txt#0",
+        "admissions_policy.pdf#0",
+        "international_students.txt#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "O04",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": null,
+          "facts_found": [],
+          "source_overlap": null,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": null,
+        "decided_by": "deterministic",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "O05",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "split": "dev",
+      "question": "Who won the 2018 FIFA World Cup?",
+      "expected_key_facts": [],
+      "should_refuse": true,
+      "answer": "I'm sorry, I can't answer that from the documents I have access to.",
+      "sources": [],
+      "refused": true,
+      "gate": "retrieval",
+      "confidence": 0.761,
+      "retrieval_confidence": 0.239,
+      "retrieved": [
+        "international_students.txt#1",
+        "international_students.txt#0",
+        "fees_and_scholarships.docx#0",
+        "admissions_policy.pdf#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "O05",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": null,
+          "facts_found": [],
+          "source_overlap": null,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": null,
+        "decided_by": "deterministic",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "O06",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "split": "dev",
+      "question": "Which cryptocurrency should I invest in this month?",
+      "expected_key_facts": [],
+      "should_refuse": true,
+      "answer": "I'm sorry, I can't answer that from the documents I have access to.",
+      "sources": [],
+      "refused": true,
+      "gate": "retrieval",
+      "confidence": 0.739,
+      "retrieval_confidence": 0.261,
+      "retrieved": [
+        "fees_and_scholarships.docx#1",
+        "admissions_policy.pdf#0",
+        "admissions_policy.pdf#1",
+        "international_students.txt#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "O06",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": null,
+          "facts_found": [],
+          "source_overlap": null,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": null,
+        "decided_by": "deterministic",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "O07",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "split": "dev",
+      "question": "How do I bake sourdough bread at home?",
+      "expected_key_facts": [],
+      "should_refuse": true,
+      "answer": "I'm sorry, I can't answer that from the documents I have access to.",
+      "sources": [],
+      "refused": true,
+      "gate": "retrieval",
+      "confidence": 0.686,
+      "retrieval_confidence": 0.314,
+      "retrieved": [
+        "fees_and_scholarships.docx#0",
+        "international_students.txt#1",
+        "admissions_policy.pdf#0",
+        "international_students.txt#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "O07",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": null,
+          "facts_found": [],
+          "source_overlap": null,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": null,
+        "decided_by": "deterministic",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "O08",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "split": "dev",
+      "question": "Explain quantum entanglement in simple terms.",
+      "expected_key_facts": [],
+      "should_refuse": true,
+      "answer": "I'm sorry, I can't answer that from the documents I have access to.",
+      "sources": [],
+      "refused": true,
+      "gate": "retrieval",
+      "confidence": 0.764,
+      "retrieval_confidence": 0.236,
+      "retrieved": [
+        "admissions_policy.pdf#0",
+        "admissions_policy.pdf#1",
+        "international_students.txt#1",
+        "international_students.txt#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "O08",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": null,
+          "facts_found": [],
+          "source_overlap": null,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": null,
+        "decided_by": "deterministic",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A09",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "heldout",
+      "question": "According to the international students, what completes this statement: \"Engineering and Medicine require IELTS ___ overall.\"?",
+      "expected_key_facts": [
+        "7.0"
+      ],
+      "should_refuse": false,
+      "answer": "Engineering and Medicine require IELTS 7.0 overall.",
+      "sources": [
+        "international_students.txt"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.687,
+      "retrieval_confidence": 0.815,
+      "retrieved": [
+        "international_students.txt#0",
+        "admissions_policy.pdf#0",
+        "international_students.txt#1",
+        "fees_and_scholarships.docx#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A09",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "7.0"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A10",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "heldout",
+      "question": "According to the admissions policy, what completes this statement: \"The deadline for applications to Medicine and Law is ___ October.\"?",
+      "expected_key_facts": [
+        "15"
+      ],
+      "should_refuse": false,
+      "answer": "The deadline for applications to Medicine and Law is 15 October.",
+      "sources": [
+        "admissions_policy.pdf"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.701,
+      "retrieval_confidence": 0.782,
+      "retrieved": [
+        "admissions_policy.pdf#0",
+        "admissions_policy.pdf#1",
+        "fees_and_scholarships.docx#1",
+        "international_students.txt#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A10",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "15"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A11",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "heldout",
+      "question": "According to the fees and scholarships, what completes this statement: \"Annual tuition for international students is ___ for Engineering and GBP 19,800 for Business Management.\"?",
+      "expected_key_facts": [
+        "GBP 24,500"
+      ],
+      "should_refuse": false,
+      "answer": "Annual tuition for international students is GBP 24,500 for Engineering and GBP 19,800 for Business Management.",
+      "sources": [
+        "fees_and_scholarships.docx"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.783,
+      "retrieval_confidence": 0.856,
+      "retrieved": [
+        "fees_and_scholarships.docx#0",
+        "fees_and_scholarships.docx#1",
+        "admissions_policy.pdf#0",
+        "international_students.txt#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A11",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "GBP 24,500"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A14",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "heldout",
+      "question": "According to the international students, what completes this statement: \"A TOEFL iBT score of ___ is accepted as equivalent to IELTS 6.5.\"?",
+      "expected_key_facts": [
+        "92"
+      ],
+      "should_refuse": false,
+      "answer": "A TOEFL iBT score of 92 is accepted as equivalent to IELTS 6.5.",
+      "sources": [
+        "international_students.txt"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.757,
+      "retrieval_confidence": 0.843,
+      "retrieved": [
+        "international_students.txt#0",
+        "admissions_policy.pdf#0",
+        "fees_and_scholarships.docx#0",
+        "international_students.txt#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A14",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "92"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "E03",
+      "type": "edge",
+      "subtype": "cross_document",
+      "split": "heldout",
+      "question": "Two-part question: (a) according to the international students, what completes \"On-campus accommodation is guaranteed for first-year international students who apply by ___ June.\"; and (b) according to the admissions policy, what completes \"Decisions on applications received by ___ January are made by 31 March.\"?",
+      "expected_key_facts": [
+        "30",
+        "31"
+      ],
+      "should_refuse": false,
+      "answer": "Decisions on applications received by 31 January are made by 31 March.",
+      "sources": [
+        "admissions_policy.pdf"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.466,
+      "retrieval_confidence": 0.612,
+      "retrieved": [
+        "admissions_policy.pdf#1",
+        "international_students.txt#1",
+        "admissions_policy.pdf#0",
+        "fees_and_scholarships.docx#1"
+      ],
+      "tools_used": [],
+      "passed": false,
+      "category": "prompt_defect",
+      "judge": {
+        "case_id": "E03",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 0.5,
+          "facts_found": [
+            "31"
+          ],
+          "source_overlap": 0.5,
+          "unsupported": [],
+          "det_pass": false
+        },
+        "llm": {
+          "status": "agree",
+          "correct": false,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": false,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/2 expected facts present"
+          },
+          "order_b": {
+            "correct": false,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/2 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": false
+      }
+    },
+    {
+      "case_id": "E05",
+      "type": "edge",
+      "subtype": "ambiguous_phrasing",
+      "split": "heldout",
+      "question": "quick one - so basically \"Scholarship applctns close on ___ May.\"??",
+      "expected_key_facts": [
+        "1"
+      ],
+      "should_refuse": false,
+      "answer": "Scholarship applications close on 1 May.",
+      "sources": [
+        "fees_and_scholarships.docx"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.448,
+      "retrieval_confidence": 0.566,
+      "retrieved": [
+        "fees_and_scholarships.docx#1",
+        "admissions_policy.pdf#1",
+        "fees_and_scholarships.docx#0",
+        "admissions_policy.pdf#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "E05",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "1"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "O02",
+      "type": "out_of_scope",
+      "subtype": "must_refuse_topic",
+      "split": "heldout",
+      "question": "Can you tell me about legal or medical advice?",
+      "expected_key_facts": [],
+      "should_refuse": true,
+      "answer": "I'm sorry, I can't answer that from the documents I have access to.",
+      "sources": [],
+      "refused": true,
+      "gate": "retrieval",
+      "confidence": 0.717,
+      "retrieval_confidence": 0.283,
+      "retrieved": [
+        "admissions_policy.pdf#1",
+        "admissions_policy.pdf#0",
+        "fees_and_scholarships.docx#1",
+        "international_students.txt#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "O02",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": null,
+          "facts_found": [],
+          "source_overlap": null,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": null,
+        "decided_by": "deterministic",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "O03",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "split": "heldout",
+      "question": "What will the weather be like in Paris tomorrow?",
+      "expected_key_facts": [],
+      "should_refuse": true,
+      "answer": "I'm sorry, I can't answer that from the documents I have access to.",
+      "sources": [],
+      "refused": true,
+      "gate": "retrieval",
+      "confidence": 0.795,
+      "retrieval_confidence": 0.205,
+      "retrieved": [
+        "international_students.txt#1",
+        "admissions_policy.pdf#0",
+        "admissions_policy.pdf#1",
+        "international_students.txt#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "O03",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": null,
+          "facts_found": [],
+          "source_overlap": null,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": null,
+        "decided_by": "deterministic",
+        "passed": true
+      }
+    }
+  ]
+}

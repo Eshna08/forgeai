@@ -1,0 +1,13 @@
+Write a FALSE-PREMISE test question from this passage (variant #$variant): the question assumes a wrong
+figure or rule, contradicting the passage. A good assistant should correct the premise using the passage.
+
+SOURCE DOCUMENT: $doc
+PASSAGE:
+"""
+$passage
+"""
+
+correct_fact: the true span, copied character-for-character from the passage (e.g. a number with its unit).
+The question must state a DIFFERENT, wrong value and must not contain correct_fact.
+
+Return JSON: {"question": "...", "correct_fact": "..."}

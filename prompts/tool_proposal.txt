@@ -1,0 +1,16 @@
+Choose tools for a document-grounded assistant. Attach a tool ONLY if the brief clearly requires it.
+Attaching an unnecessary tool is a defect (e.g. a weather tool on an HR policy assistant).
+
+BRIEF:
+$brief
+
+REQUIREMENTS:
+$requirements
+
+A CSV file is present in the documents: $has_csv
+
+TOOL REGISTRY:
+$registry
+
+For each tool you attach give a one-sentence justification that quotes the part of the brief that needs it.
+Return JSON: {"tools": [{"name": "<registry name>", "justification": "..."}]}  (an empty list is fine)

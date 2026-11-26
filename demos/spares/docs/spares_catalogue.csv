@@ -1,0 +1,65 @@
+part_id,name,category,supplier,unit_price,lead_time_days,stock
+SP-0001,Fuel injector nozzle,Main Engine,Asia Pacific Ship Parts,8551.64,28,0
+SP-0002,Cylinder liner,Main Engine,Nordic Marine Supply,7462.96,5,6
+SP-0003,Piston ring set,Main Engine,Global Engine Components,898.79,10,0
+SP-0004,Exhaust valve spindle,Main Engine,Nordic Marine Supply,4129.35,5,2
+SP-0005,Turbocharger bearing,Main Engine,Nordic Marine Supply,5139.01,3,40
+SP-0006,Fuel pump plunger,Main Engine,Nordic Marine Supply,8548.07,3,40
+SP-0007,Starting air valve,Main Engine,Global Engine Components,3811.45,10,0
+SP-0008,Cylinder head gasket,Main Engine,Global Engine Components,7782.83,14,10
+SP-0009,Lube oil filter element,Auxiliary Engine,Nordic Marine Supply,991.61,14,25
+SP-0010,Fuel filter cartridge,Auxiliary Engine,Global Engine Components,358.08,10,6
+SP-0011,Cooling water pump seal,Auxiliary Engine,Nordic Marine Supply,1004.03,5,40
+SP-0012,Governor actuator,Auxiliary Engine,Nordic Marine Supply,1129.46,42,25
+SP-0013,Connecting rod bearing,Auxiliary Engine,Asia Pacific Ship Parts,1407.92,42,40
+SP-0014,Thermostat element,Auxiliary Engine,Asia Pacific Ship Parts,676.38,10,1
+SP-0015,Centrifugal pump impeller,Pumps,Global Engine Components,1969.39,5,40
+SP-0016,Mechanical seal kit,Pumps,Asia Pacific Ship Parts,1355.72,21,15
+SP-0017,Ballast pump shaft sleeve,Pumps,Asia Pacific Ship Parts,1557.59,5,0
+SP-0018,Bilge pump diaphragm,Pumps,Global Engine Components,1097.68,21,1
+SP-0019,Pump coupling insert,Pumps,Asia Pacific Ship Parts,1106.29,5,25
+SP-0020,Circuit breaker 63A,Electrical,Global Engine Components,2537.76,21,6
+SP-0021,Generator AVR module,Electrical,Global Engine Components,1159.56,42,40
+SP-0022,Navigation light LED unit,Electrical,Asia Pacific Ship Parts,275.92,5,4
+SP-0023,Motor contactor 40A,Electrical,Asia Pacific Ship Parts,2248.71,5,0
+SP-0024,Insulation monitor relay,Electrical,Global Engine Components,2262.68,42,4
+SP-0025,Windlass brake lining,Deck Machinery,Global Engine Components,1867.15,21,0
+SP-0026,Mooring winch hydraulic motor seal kit,Deck Machinery,Asia Pacific Ship Parts,1722.34,5,15
+SP-0027,Crane slewing bearing seal,Deck Machinery,Nordic Marine Supply,1066.94,14,1
+SP-0028,Wire rope 24mm per metre,Deck Machinery,Global Engine Components,1207.36,28,15
+SP-0029,Hatch cover rubber packing per metre,Deck Machinery,Nordic Marine Supply,819.40,28,25
+SP-0030,Lifejacket light,Safety,Asia Pacific Ship Parts,1240.24,28,25
+SP-0031,Fire hose 20m,Safety,Asia Pacific Ship Parts,997.76,21,10
+SP-0032,SCBA cylinder 6.8L,Safety,Nordic Marine Supply,236.76,7,1
+SP-0033,EEBD hood,Safety,Nordic Marine Supply,932.17,3,15
+SP-0034,Immersion suit,Safety,Global Engine Components,279.81,14,0
+SP-0035,Fuel injector nozzle (heavy duty),Main Engine,Asia Pacific Ship Parts,4997.48,21,1
+SP-0036,Cylinder liner (type B),Main Engine,Global Engine Components,8571.93,3,15
+SP-0037,Piston ring set (type B),Main Engine,Global Engine Components,3774.46,28,10
+SP-0038,Exhaust valve spindle (heavy duty),Main Engine,Asia Pacific Ship Parts,5854.89,3,2
+SP-0039,Turbocharger bearing (heavy duty),Main Engine,Nordic Marine Supply,4189.39,5,6
+SP-0040,Fuel pump plunger (type B),Main Engine,Nordic Marine Supply,1280.46,7,25
+SP-0041,Starting air valve (heavy duty),Main Engine,Asia Pacific Ship Parts,5678.14,5,2
+SP-0042,Cylinder head gasket (type B),Main Engine,Asia Pacific Ship Parts,1677.53,14,6
+SP-0043,Lube oil filter element (type B),Auxiliary Engine,Asia Pacific Ship Parts,874.51,5,15
+SP-0044,Fuel filter cartridge (OEM),Auxiliary Engine,Asia Pacific Ship Parts,891.55,5,1
+SP-0045,Cooling water pump seal (heavy duty),Auxiliary Engine,Global Engine Components,643.04,14,15
+SP-0046,Governor actuator (type B),Auxiliary Engine,Nordic Marine Supply,948.75,10,25
+SP-0047,Connecting rod bearing (OEM),Auxiliary Engine,Nordic Marine Supply,1254.52,3,25
+SP-0048,Thermostat element (OEM),Auxiliary Engine,Global Engine Components,1559.45,14,25
+SP-0049,Centrifugal pump impeller (OEM),Pumps,Nordic Marine Supply,947.23,10,25
+SP-0050,Mechanical seal kit (type B),Pumps,Global Engine Components,884.49,10,40
+SP-0051,Ballast pump shaft sleeve (heavy duty),Pumps,Nordic Marine Supply,2062.18,10,2
+SP-0052,Bilge pump diaphragm (type B),Pumps,Asia Pacific Ship Parts,946.91,3,0
+SP-0053,Pump coupling insert (OEM),Pumps,Asia Pacific Ship Parts,714.61,21,15
+SP-0054,Circuit breaker 63A (type B),Electrical,Asia Pacific Ship Parts,3058.70,21,0
+SP-0055,Generator AVR module (heavy duty),Electrical,Nordic Marine Supply,772.30,10,6
+SP-0056,Navigation light LED unit (heavy duty),Electrical,Asia Pacific Ship Parts,2019.57,3,15
+SP-0057,Motor contactor 40A (type B),Electrical,Asia Pacific Ship Parts,2570.88,5,0
+SP-0058,Insulation monitor relay (OEM),Electrical,Global Engine Components,2415.44,42,1
+SP-0059,Windlass brake lining (OEM),Deck Machinery,Global Engine Components,1612.77,28,15
+SP-0060,Mooring winch hydraulic motor seal kit (OEM),Deck Machinery,Global Engine Components,4545.96,7,1
+SP-0061,Crane slewing bearing seal (heavy duty),Deck Machinery,Nordic Marine Supply,746.74,42,1
+SP-0062,Wire rope 24mm per metre (type B),Deck Machinery,Global Engine Components,4705.96,21,1
+SP-0063,Hatch cover rubber packing per metre (type B),Deck Machinery,Global Engine Components,650.45,3,0
+SP-0064,Lifejacket light (type B),Safety,Global Engine Components,1309.07,28,2

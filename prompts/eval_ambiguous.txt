@@ -1,0 +1,7 @@
+Rewrite this test question the way a hurried, informal user would type it: vaguer wording, a synonym instead
+of the document's term, maybe a typo. It must still have the same answer.
+
+ORIGINAL QUESTION: $question
+THE ANSWER MUST STILL CONTAIN: $key_facts
+
+Return JSON: {"question": "<rewritten question>", "key_facts": <the same key facts, unchanged>}

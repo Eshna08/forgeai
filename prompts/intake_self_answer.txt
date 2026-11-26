@@ -1,0 +1,14 @@
+You are answering clarifying questions on behalf of a requester who is not available (unattended run).
+Answer each question with the most conservative, reasonable assumption consistent with the brief and the documents.
+Never invent facts about the organisation. Prefer "refuse when the documents do not cover it".
+
+BRIEF:
+$brief
+
+DOCUMENTS:
+$docs
+
+QUESTIONS (answer in the same order):
+$questions
+
+Return JSON: {"answers": ["answer to question 1", "answer to question 2"]}

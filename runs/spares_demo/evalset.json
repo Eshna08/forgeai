@@ -1,0 +1,534 @@
+{
+  "stats": {
+    "total": 30,
+    "by_type": {
+      "answerable": 14,
+      "out_of_scope": 8,
+      "edge": 8
+    },
+    "by_subtype": {
+      "ambiguous_phrasing": 3,
+      "computation": 2,
+      "cross_document": 3,
+      "csv_lookup": 4,
+      "must_refuse_topic": 2,
+      "off_domain": 6,
+      "single_doc": 10
+    },
+    "dev": 22,
+    "heldout": 8,
+    "docs_covered": [
+      "spares_catalogue.csv",
+      "supplier_a_terms.pdf",
+      "supplier_b_terms.pdf"
+    ],
+    "docs_uncovered": [],
+    "meets_minimums": true
+  },
+  "cases": [
+    {
+      "id": "A01",
+      "type": "answerable",
+      "subtype": "csv_lookup",
+      "question": "What is the unit price of Hatch cover rubber packing per metre (SP-0029)?",
+      "expected_source_docs": [
+        "spares_catalogue.csv"
+      ],
+      "expected_key_facts": [
+        "819.40"
+      ],
+      "evidence": [
+        "SP-0029"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "code"
+    },
+    {
+      "id": "A02",
+      "type": "answerable",
+      "subtype": "csv_lookup",
+      "question": "What is the lead time days of Lifejacket light (type B) (SP-0064)?",
+      "expected_source_docs": [
+        "spares_catalogue.csv"
+      ],
+      "expected_key_facts": [
+        "28"
+      ],
+      "evidence": [
+        "SP-0064"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "code"
+    },
+    {
+      "id": "A03",
+      "type": "answerable",
+      "subtype": "csv_lookup",
+      "question": "What is the stock of Exhaust valve spindle (heavy duty) (SP-0038)?",
+      "expected_source_docs": [
+        "spares_catalogue.csv"
+      ],
+      "expected_key_facts": [
+        "2"
+      ],
+      "evidence": [
+        "SP-0038"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "code"
+    },
+    {
+      "id": "A04",
+      "type": "answerable",
+      "subtype": "csv_lookup",
+      "question": "What is the category of Bilge pump diaphragm (SP-0018)?",
+      "expected_source_docs": [
+        "spares_catalogue.csv"
+      ],
+      "expected_key_facts": [
+        "Pumps"
+      ],
+      "evidence": [
+        "SP-0018"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "code"
+    },
+    {
+      "id": "A05",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the supplier a terms, what completes this statement: \"Expedited delivery within ___ is available for a surcharge of 15% of the order value.\"?",
+      "expected_source_docs": [
+        "supplier_a_terms.pdf"
+      ],
+      "expected_key_facts": [
+        "72 hours"
+      ],
+      "evidence": [
+        "72 hours"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "A06",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the supplier b terms, what completes this statement: \"Asia Pacific Ship Parts offers a ___ discount on orders above USD 10,000.\"?",
+      "expected_source_docs": [
+        "supplier_b_terms.pdf"
+      ],
+      "expected_key_facts": [
+        "7%"
+      ],
+      "evidence": [
+        "7%"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "A07",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the supplier a terms, what completes this statement: \"Nordic Marine Supply grants a ___ discount on orders above USD 5,000 and a 10% discount on orders above USD 20,000.\"?",
+      "expected_source_docs": [
+        "supplier_a_terms.pdf"
+      ],
+      "expected_key_facts": [
+        "5%"
+      ],
+      "evidence": [
+        "5%"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "A08",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the supplier b terms, what completes this statement: \"Orders above ___ require a 30% advance payment.\"?",
+      "expected_source_docs": [
+        "supplier_b_terms.pdf"
+      ],
+      "expected_key_facts": [
+        "USD 50,000"
+      ],
+      "evidence": [
+        "USD 50,000"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "A09",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the supplier a terms, what completes this statement: \"All parts carry a warranty of ___ from installation or 18 months from delivery, whichever comes first.\"?",
+      "expected_source_docs": [
+        "supplier_a_terms.pdf"
+      ],
+      "expected_key_facts": [
+        "12 months"
+      ],
+      "evidence": [
+        "12 months"
+      ],
+      "should_refuse": false,
+      "split": "heldout",
+      "origin": "llm"
+    },
+    {
+      "id": "A10",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the supplier b terms, what completes this statement: \"There is no discount on orders below ___.\"?",
+      "expected_source_docs": [
+        "supplier_b_terms.pdf"
+      ],
+      "expected_key_facts": [
+        "USD 10,000"
+      ],
+      "evidence": [
+        "USD 10,000"
+      ],
+      "should_refuse": false,
+      "split": "heldout",
+      "origin": "llm"
+    },
+    {
+      "id": "A11",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the supplier a terms, what completes this statement: \"The minimum order value is ___.\"?",
+      "expected_source_docs": [
+        "supplier_a_terms.pdf"
+      ],
+      "expected_key_facts": [
+        "USD 500"
+      ],
+      "evidence": [
+        "USD 500"
+      ],
+      "should_refuse": false,
+      "split": "heldout",
+      "origin": "llm"
+    },
+    {
+      "id": "A12",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the supplier a terms, what completes this statement: \"Payment is due within ___ of invoice.\"?",
+      "expected_source_docs": [
+        "supplier_a_terms.pdf"
+      ],
+      "expected_key_facts": [
+        "30 days"
+      ],
+      "evidence": [
+        "30 days"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "A13",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the supplier b terms, what completes this statement: \"The minimum order value is ___.\"?",
+      "expected_source_docs": [
+        "supplier_b_terms.pdf"
+      ],
+      "expected_key_facts": [
+        "USD 1,000"
+      ],
+      "evidence": [
+        "USD 1,000"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "A14",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the supplier a terms, what completes this statement: \"Orders below the minimum incur a handling fee of ___.\"?",
+      "expected_source_docs": [
+        "supplier_a_terms.pdf"
+      ],
+      "expected_key_facts": [
+        "USD 45"
+      ],
+      "evidence": [
+        "USD 45"
+      ],
+      "should_refuse": false,
+      "split": "heldout",
+      "origin": "llm"
+    },
+    {
+      "id": "E01",
+      "type": "edge",
+      "subtype": "computation",
+      "question": "What would 2 units of Bilge pump diaphragm (type B) (SP-0052) cost in total at the catalogue unit price?",
+      "expected_source_docs": [
+        "spares_catalogue.csv"
+      ],
+      "expected_key_facts": [
+        "1893.82"
+      ],
+      "evidence": [
+        "SP-0052",
+        "946.91"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "code"
+    },
+    {
+      "id": "E02",
+      "type": "edge",
+      "subtype": "computation",
+      "question": "What would 4 units of Navigation light LED unit (heavy duty) (SP-0056) cost in total at the catalogue unit price?",
+      "expected_source_docs": [
+        "spares_catalogue.csv"
+      ],
+      "expected_key_facts": [
+        "8078.28"
+      ],
+      "evidence": [
+        "SP-0056",
+        "2019.57"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "code"
+    },
+    {
+      "id": "E03",
+      "type": "edge",
+      "subtype": "cross_document",
+      "question": "Two-part question: (a) according to the supplier a terms, what completes \"Nordic Marine Supply grants a ___ discount on orders above USD 5,000 and a 10% discount on orders above USD 20,000.\"; and (b) according to the supplier b terms, what completes \"Asia Pacific Ship Parts offers a ___ discount on orders above USD 10,000.\"?",
+      "expected_source_docs": [
+        "supplier_a_terms.pdf",
+        "supplier_b_terms.pdf"
+      ],
+      "expected_key_facts": [
+        "5%",
+        "7%"
+      ],
+      "evidence": [
+        "5%",
+        "7%"
+      ],
+      "should_refuse": false,
+      "split": "heldout",
+      "origin": "llm"
+    },
+    {
+      "id": "E04",
+      "type": "edge",
+      "subtype": "cross_document",
+      "question": "Two-part question: (a) according to the supplier b terms, what completes \"There is no discount on orders below ___.\"; and (b) according to the supplier a terms, what completes \"The minimum order value is ___.\"?",
+      "expected_source_docs": [
+        "supplier_b_terms.pdf",
+        "supplier_a_terms.pdf"
+      ],
+      "expected_key_facts": [
+        "USD 10,000",
+        "USD 500"
+      ],
+      "evidence": [
+        "USD 10,000",
+        "USD 500"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "E05",
+      "type": "edge",
+      "subtype": "cross_document",
+      "question": "Two-part question: (a) according to the supplier a terms, what completes \"Orders below the minimum incur a handling fee of ___.\"; and (b) according to the supplier b terms, what completes \"The minimum order value is ___.\"?",
+      "expected_source_docs": [
+        "supplier_a_terms.pdf",
+        "supplier_b_terms.pdf"
+      ],
+      "expected_key_facts": [
+        "USD 45",
+        "USD 1,000"
+      ],
+      "evidence": [
+        "USD 45",
+        "USD 1,000"
+      ],
+      "should_refuse": false,
+      "split": "heldout",
+      "origin": "llm"
+    },
+    {
+      "id": "E06",
+      "type": "edge",
+      "subtype": "ambiguous_phrasing",
+      "question": "quick one - so bsclly \"Expedited delivery within ___ is available for a surcharge of 15% of the order value.\"??",
+      "expected_source_docs": [
+        "supplier_a_terms.pdf"
+      ],
+      "expected_key_facts": [
+        "72 hours"
+      ],
+      "evidence": [
+        "72 hours"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "E07",
+      "type": "edge",
+      "subtype": "ambiguous_phrasing",
+      "question": "quick one - so bsclly \"Asia Pacific Ship Parts offers a ___ discount on orders above USD 10,000.\"??",
+      "expected_source_docs": [
+        "supplier_b_terms.pdf"
+      ],
+      "expected_key_facts": [
+        "7%"
+      ],
+      "evidence": [
+        "7%"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "E08",
+      "type": "edge",
+      "subtype": "ambiguous_phrasing",
+      "question": "quick one - so bsclly \"Nordic Marine Supply grants a ___ discount on orders above USD 5,000 and a 10% discount on orders above USD 20,000.\"??",
+      "expected_source_docs": [
+        "supplier_a_terms.pdf"
+      ],
+      "expected_key_facts": [
+        "5%"
+      ],
+      "evidence": [
+        "5%"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "O01",
+      "type": "out_of_scope",
+      "subtype": "must_refuse_topic",
+      "question": "Can you tell me about personal or confidential data about individual people?",
+      "expected_source_docs": [],
+      "expected_key_facts": [],
+      "evidence": [],
+      "should_refuse": true,
+      "split": "dev",
+      "origin": "must_refuse_template"
+    },
+    {
+      "id": "O02",
+      "type": "out_of_scope",
+      "subtype": "must_refuse_topic",
+      "question": "Can you tell me about legal or medical advice?",
+      "expected_source_docs": [],
+      "expected_key_facts": [],
+      "evidence": [],
+      "should_refuse": true,
+      "split": "heldout",
+      "origin": "must_refuse_template"
+    },
+    {
+      "id": "O03",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "question": "What will the weather be like in Paris tomorrow?",
+      "expected_source_docs": [],
+      "expected_key_facts": [],
+      "evidence": [],
+      "should_refuse": true,
+      "split": "heldout",
+      "origin": "llm"
+    },
+    {
+      "id": "O04",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "question": "Can you write me a poem about the ocean?",
+      "expected_source_docs": [],
+      "expected_key_facts": [],
+      "evidence": [],
+      "should_refuse": true,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "O05",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "question": "Who won the 2018 FIFA World Cup?",
+      "expected_source_docs": [],
+      "expected_key_facts": [],
+      "evidence": [],
+      "should_refuse": true,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "O06",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "question": "Which cryptocurrency should I invest in this month?",
+      "expected_source_docs": [],
+      "expected_key_facts": [],
+      "evidence": [],
+      "should_refuse": true,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "O07",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "question": "How do I bake sourdough bread at home?",
+      "expected_source_docs": [],
+      "expected_key_facts": [],
+      "evidence": [],
+      "should_refuse": true,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "O08",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "question": "Explain quantum entanglement in simple terms.",
+      "expected_source_docs": [],
+      "expected_key_facts": [],
+      "evidence": [],
+      "should_refuse": true,
+      "split": "dev",
+      "origin": "llm"
+    }
+  ],
+  "dropped": []
+}

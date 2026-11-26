@@ -1,0 +1,13 @@
+Write a system prompt for a document-grounded assistant using a STRICT, CONSERVATIVE strategy:
+explicit refusal criteria, "if it is not in the passages, refuse", exact-figure quoting, short answers.
+
+REQUIREMENTS:
+$requirements
+
+DOCUMENTS:
+$docs
+
+TOOLS:
+$tools
+
+Under 250 words, second person. Return JSON: {"system_prompt": "..."}

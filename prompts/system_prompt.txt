@@ -1,0 +1,21 @@
+Write the system prompt for a document-grounded chat assistant. The assistant will receive retrieved
+document passages and (optionally) tool results with every user question.
+
+REQUIREMENTS:
+$requirements
+
+DOCUMENTS IT WILL SEE:
+$docs
+
+TOOLS IT CAN CALL:
+$tools
+
+The system prompt must:
+- state who the assistant serves and its scope, in the requested tone
+- list the topics it answers and the topics it must refuse
+- require answers to be grounded ONLY in the provided passages/tool results, quoting figures exactly
+- require refusing (refused=true) when the passages do not contain the answer
+- explain when to use each tool (if any)
+- be under 250 words, second person ("You are ...")
+
+Return JSON: {"system_prompt": "..."}

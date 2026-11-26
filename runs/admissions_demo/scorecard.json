@@ -1,0 +1,125 @@
+{
+  "run_id": "admissions_demo",
+  "status": "completed",
+  "provider": "mock",
+  "models": {
+    "agent": "mock-agent",
+    "judge": "mock-judge"
+  },
+  "seed": 42,
+  "dev_score": 100.0,
+  "heldout_score": 87.5,
+  "heldout_n": 8,
+  "dev_n": 22,
+  "baseline_dev_score": 100.0,
+  "stop_reason": "target reached (100.0 >= 100.0)",
+  "iterations": [
+    {
+      "iteration": 0,
+      "kind": "baseline",
+      "category": null,
+      "change": null,
+      "score_before": null,
+      "score_after": 100.0,
+      "decision": null,
+      "taxonomy": {},
+      "taxonomy_after": null,
+      "tokens": 20640,
+      "latency_s": 0.06
+    }
+  ],
+  "taxonomy_final_heldout": {
+    "prompt_defect": 1
+  },
+  "tools_attached": [
+    "calculator",
+    "current_date"
+  ],
+  "tools_rejected": [
+    "csv_lookup",
+    "weather"
+  ],
+  "judge_selftest": {
+    "n": 7,
+    "n_correct": 7,
+    "all_correct": true
+  },
+  "tournament_winner": "concise",
+  "budget": {
+    "tokens": 141716,
+    "calls": 157,
+    "max_tokens": 600000,
+    "elapsed_s": 2.2,
+    "max_seconds": 2400.0,
+    "fallbacks": 0,
+    "validation_retries": 0,
+    "transport_retries": 0,
+    "cache_hits": 50,
+    "by_task": {
+      "intake_questions": {
+        "calls": 1,
+        "tokens": 694
+      },
+      "intake_self_answer": {
+        "calls": 1,
+        "tokens": 663
+      },
+      "requirements": {
+        "calls": 1,
+        "tokens": 1219
+      },
+      "groundability": {
+        "calls": 5,
+        "tokens": 4157
+      },
+      "tool_proposal": {
+        "calls": 1,
+        "tokens": 805
+      },
+      "system_prompt": {
+        "calls": 1,
+        "tokens": 908
+      },
+      "eval_answerable": {
+        "calls": 15,
+        "tokens": 6179
+      },
+      "eval_cross": {
+        "calls": 3,
+        "tokens": 1489
+      },
+      "eval_ambiguous": {
+        "calls": 3,
+        "tokens": 682
+      },
+      "eval_false_premise": {
+        "calls": 2,
+        "tokens": 659
+      },
+      "eval_out_of_scope": {
+        "calls": 1,
+        "tokens": 383
+      },
+      "judge": {
+        "calls": 66,
+        "tokens": 51348
+      },
+      "tournament_strict": {
+        "calls": 1,
+        "tokens": 829
+      },
+      "agent_answer": {
+        "calls": 54,
+        "tokens": 69985
+      },
+      "tournament_concise": {
+        "calls": 1,
+        "tokens": 843
+      },
+      "tournament_stepwise": {
+        "calls": 1,
+        "tokens": 873
+      }
+    }
+  }
+}

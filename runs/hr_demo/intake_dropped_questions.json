@@ -1,0 +1,10 @@
+[
+  {
+    "question": "Do you want an assistant that answers HR policy questions for shore staff: leave entitlements,?",
+    "reason": "answerable from the brief"
+  },
+  {
+    "question": "Which languages must the assistant support?",
+    "reason": "over the 5-question cap"
+  }
+]

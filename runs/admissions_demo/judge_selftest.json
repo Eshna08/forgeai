@@ -1,0 +1,70 @@
+{
+  "cases": [
+    {
+      "case": "known-good answer",
+      "expected_pass": true,
+      "judged_pass": true,
+      "caught": true,
+      "decided_by": "agreement",
+      "unsupported": []
+    },
+    {
+      "case": "verbose answer padded with an unsupported claim",
+      "expected_pass": false,
+      "judged_pass": false,
+      "caught": true,
+      "decided_by": "agreement",
+      "unsupported": [
+        "12",
+        "Christmas",
+        "Wellbeing",
+        "Charter"
+      ]
+    },
+    {
+      "case": "wrong number",
+      "expected_pass": false,
+      "judged_pass": false,
+      "caught": true,
+      "decided_by": "agreement",
+      "unsupported": [
+        "20"
+      ]
+    },
+    {
+      "case": "refused although the answer is in context",
+      "expected_pass": false,
+      "judged_pass": false,
+      "caught": true,
+      "decided_by": "deterministic",
+      "unsupported": []
+    },
+    {
+      "case": "answered an out-of-scope question",
+      "expected_pass": false,
+      "judged_pass": false,
+      "caught": true,
+      "decided_by": "deterministic",
+      "unsupported": []
+    },
+    {
+      "case": "correct refusal of out-of-scope question",
+      "expected_pass": true,
+      "judged_pass": true,
+      "caught": true,
+      "decided_by": "deterministic",
+      "unsupported": []
+    },
+    {
+      "case": "long but fully supported answer (length must not matter)",
+      "expected_pass": true,
+      "judged_pass": true,
+      "caught": true,
+      "decided_by": "agreement",
+      "unsupported": []
+    }
+  ],
+  "n": 7,
+  "n_correct": 7,
+  "all_correct": true
+}

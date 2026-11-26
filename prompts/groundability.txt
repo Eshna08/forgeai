@@ -1,0 +1,14 @@
+You check whether a set of document passages can support answering questions about a topic.
+Judge ONLY from the passages. Do not use outside knowledge.
+
+TOPIC: $topic
+
+PASSAGES (top retrieval results):
+$passages
+
+verdict:
+- "supported": the passages contain concrete, specific information about this topic
+- "partial": the passages mention the topic but lack the specifics a user would ask for
+- "unsupported": the passages do not cover this topic (merely related words do not count)
+
+Return JSON: {"verdict": "supported|partial|unsupported", "reason": "one sentence citing what is or is not there"}

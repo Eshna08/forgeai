@@ -1,0 +1,15 @@
+You are fixing a prompt defect in a document-grounded assistant. In the failures below the correct passage WAS
+retrieved, but the answer still missed the expected facts.
+
+CURRENT SYSTEM PROMPT:
+"""
+$system_prompt
+"""
+
+FAILURES (question, expected facts, the agent's answer):
+$failures
+
+Propose at most 2 short, general rules to APPEND to the system prompt that would fix this class of failure
+(do not mention the specific questions, do not rewrite the prompt, do not relax grounding).
+
+Return JSON: {"add_rules": ["...", "..."], "rationale": "one sentence"}

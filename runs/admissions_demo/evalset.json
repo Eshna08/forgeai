@@ -1,0 +1,531 @@
+{
+  "stats": {
+    "total": 30,
+    "by_type": {
+      "answerable": 14,
+      "out_of_scope": 8,
+      "edge": 8
+    },
+    "by_subtype": {
+      "ambiguous_phrasing": 3,
+      "cross_document": 3,
+      "false_premise": 2,
+      "must_refuse_topic": 2,
+      "off_domain": 6,
+      "single_doc": 14
+    },
+    "dev": 22,
+    "heldout": 8,
+    "docs_covered": [
+      "admissions_policy.pdf",
+      "fees_and_scholarships.docx",
+      "international_students.txt"
+    ],
+    "docs_uncovered": [],
+    "meets_minimums": true
+  },
+  "cases": [
+    {
+      "id": "A01",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the admissions policy, what completes this statement: \"Decisions on applications received by ___ January are made by 31 March.\"?",
+      "expected_source_docs": [
+        "admissions_policy.pdf"
+      ],
+      "expected_key_facts": [
+        "31"
+      ],
+      "evidence": [
+        "31"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "A02",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the fees and scholarships, what completes this statement: \"Scholarship applications close on ___ May.\"?",
+      "expected_source_docs": [
+        "fees_and_scholarships.docx"
+      ],
+      "expected_key_facts": [
+        "1"
+      ],
+      "evidence": [
+        "1"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "A03",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the international students, what completes this statement: \"International applicants whose first language is not English need an IELTS Academic score of ___ overall with no component below 6.0.\"?",
+      "expected_source_docs": [
+        "international_students.txt"
+      ],
+      "expected_key_facts": [
+        "6.5"
+      ],
+      "evidence": [
+        "6.5"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "A04",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the admissions policy, what completes this statement: \"Applications for September entry open on ___ September of the previous year.\"?",
+      "expected_source_docs": [
+        "admissions_policy.pdf"
+      ],
+      "expected_key_facts": [
+        "1"
+      ],
+      "evidence": [
+        "1"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "A05",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the fees and scholarships, what completes this statement: \"Annual tuition for home students is ___.\"?",
+      "expected_source_docs": [
+        "fees_and_scholarships.docx"
+      ],
+      "expected_key_facts": [
+        "GBP 9,250"
+      ],
+      "evidence": [
+        "GBP 9,250"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "A06",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the international students, what completes this statement: \"The university issues a Confirmation of Acceptance for Studies once the offer is unconditional and a deposit of ___ has been paid.\"?",
+      "expected_source_docs": [
+        "international_students.txt"
+      ],
+      "expected_key_facts": [
+        "GBP 3,000"
+      ],
+      "evidence": [
+        "GBP 3,000"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "A07",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the admissions policy, what completes this statement: \"Applicants must reply to offers by ___ June.\"?",
+      "expected_source_docs": [
+        "admissions_policy.pdf"
+      ],
+      "expected_key_facts": [
+        "1"
+      ],
+      "evidence": [
+        "1"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "A08",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the fees and scholarships, what completes this statement: \"Recipients are notified by ___ June.\"?",
+      "expected_source_docs": [
+        "fees_and_scholarships.docx"
+      ],
+      "expected_key_facts": [
+        "15"
+      ],
+      "evidence": [
+        "15"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "A09",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the international students, what completes this statement: \"Engineering and Medicine require IELTS ___ overall.\"?",
+      "expected_source_docs": [
+        "international_students.txt"
+      ],
+      "expected_key_facts": [
+        "7.0"
+      ],
+      "evidence": [
+        "7.0"
+      ],
+      "should_refuse": false,
+      "split": "heldout",
+      "origin": "llm"
+    },
+    {
+      "id": "A10",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the admissions policy, what completes this statement: \"The deadline for applications to Medicine and Law is ___ October.\"?",
+      "expected_source_docs": [
+        "admissions_policy.pdf"
+      ],
+      "expected_key_facts": [
+        "15"
+      ],
+      "evidence": [
+        "15"
+      ],
+      "should_refuse": false,
+      "split": "heldout",
+      "origin": "llm"
+    },
+    {
+      "id": "A11",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the fees and scholarships, what completes this statement: \"Annual tuition for international students is ___ for Engineering and GBP 19,800 for Business Management.\"?",
+      "expected_source_docs": [
+        "fees_and_scholarships.docx"
+      ],
+      "expected_key_facts": [
+        "GBP 24,500"
+      ],
+      "evidence": [
+        "GBP 24,500"
+      ],
+      "should_refuse": false,
+      "split": "heldout",
+      "origin": "llm"
+    },
+    {
+      "id": "A12",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the international students, what completes this statement: \"International students are met at the airport during the arrival week, which begins on ___ September.\"?",
+      "expected_source_docs": [
+        "international_students.txt"
+      ],
+      "expected_key_facts": [
+        "15"
+      ],
+      "evidence": [
+        "15"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "A13",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the fees and scholarships, what completes this statement: \"Tuition can be paid in ___ in October, January and April.\"?",
+      "expected_source_docs": [
+        "fees_and_scholarships.docx"
+      ],
+      "expected_key_facts": [
+        "3 instalments"
+      ],
+      "evidence": [
+        "3 instalments"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "A14",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "question": "According to the international students, what completes this statement: \"A TOEFL iBT score of ___ is accepted as equivalent to IELTS 6.5.\"?",
+      "expected_source_docs": [
+        "international_students.txt"
+      ],
+      "expected_key_facts": [
+        "92"
+      ],
+      "evidence": [
+        "92"
+      ],
+      "should_refuse": false,
+      "split": "heldout",
+      "origin": "llm"
+    },
+    {
+      "id": "E01",
+      "type": "edge",
+      "subtype": "cross_document",
+      "question": "Two-part question: (a) according to the admissions policy, what completes \"Applications for September entry open on ___ September of the previous year.\"; and (b) according to the fees and scholarships, what completes \"Scholarship applications close on ___ May.\"?",
+      "expected_source_docs": [
+        "admissions_policy.pdf",
+        "fees_and_scholarships.docx"
+      ],
+      "expected_key_facts": [
+        "1",
+        "1"
+      ],
+      "evidence": [
+        "1",
+        "1"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "E02",
+      "type": "edge",
+      "subtype": "cross_document",
+      "question": "Two-part question: (a) according to the fees and scholarships, what completes \"Recipients are notified by ___ June.\"; and (b) according to the international students, what completes \"International students are met at the airport during the arrival week, which begins on ___ September.\"?",
+      "expected_source_docs": [
+        "fees_and_scholarships.docx",
+        "international_students.txt"
+      ],
+      "expected_key_facts": [
+        "15",
+        "15"
+      ],
+      "evidence": [
+        "15",
+        "15"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "E03",
+      "type": "edge",
+      "subtype": "cross_document",
+      "question": "Two-part question: (a) according to the international students, what completes \"On-campus accommodation is guaranteed for first-year international students who apply by ___ June.\"; and (b) according to the admissions policy, what completes \"Decisions on applications received by ___ January are made by 31 March.\"?",
+      "expected_source_docs": [
+        "international_students.txt",
+        "admissions_policy.pdf"
+      ],
+      "expected_key_facts": [
+        "30",
+        "31"
+      ],
+      "evidence": [
+        "30",
+        "31"
+      ],
+      "should_refuse": false,
+      "split": "heldout",
+      "origin": "llm"
+    },
+    {
+      "id": "E04",
+      "type": "edge",
+      "subtype": "ambiguous_phrasing",
+      "question": "quick one - so basically \"Decisions on applctns received by ___ January are made by 31 March.\"??",
+      "expected_source_docs": [
+        "admissions_policy.pdf"
+      ],
+      "expected_key_facts": [
+        "31"
+      ],
+      "evidence": [
+        "31"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "E05",
+      "type": "edge",
+      "subtype": "ambiguous_phrasing",
+      "question": "quick one - so basically \"Scholarship applctns close on ___ May.\"??",
+      "expected_source_docs": [
+        "fees_and_scholarships.docx"
+      ],
+      "expected_key_facts": [
+        "1"
+      ],
+      "evidence": [
+        "1"
+      ],
+      "should_refuse": false,
+      "split": "heldout",
+      "origin": "llm"
+    },
+    {
+      "id": "E06",
+      "type": "edge",
+      "subtype": "ambiguous_phrasing",
+      "question": "quick one - so basically \"Intrntnl applicants whose first language is not English need an IELTS Academic score of ___ overall with no component below 6.0.\"??",
+      "expected_source_docs": [
+        "international_students.txt"
+      ],
+      "expected_key_facts": [
+        "6.5"
+      ],
+      "evidence": [
+        "6.5"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "E07",
+      "type": "edge",
+      "subtype": "false_premise",
+      "question": "I was told that \"Applications for September entry open on 5 September of the previous year.\" - is that right?",
+      "expected_source_docs": [
+        "admissions_policy.pdf"
+      ],
+      "expected_key_facts": [
+        "1"
+      ],
+      "evidence": [
+        "1"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "E08",
+      "type": "edge",
+      "subtype": "false_premise",
+      "question": "I was told that \"Recipients are notified by 33 June.\" - is that right?",
+      "expected_source_docs": [
+        "fees_and_scholarships.docx"
+      ],
+      "expected_key_facts": [
+        "15"
+      ],
+      "evidence": [
+        "15"
+      ],
+      "should_refuse": false,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "O01",
+      "type": "out_of_scope",
+      "subtype": "must_refuse_topic",
+      "question": "Can you tell me about personal or confidential data about individual people?",
+      "expected_source_docs": [],
+      "expected_key_facts": [],
+      "evidence": [],
+      "should_refuse": true,
+      "split": "dev",
+      "origin": "must_refuse_template"
+    },
+    {
+      "id": "O02",
+      "type": "out_of_scope",
+      "subtype": "must_refuse_topic",
+      "question": "Can you tell me about legal or medical advice?",
+      "expected_source_docs": [],
+      "expected_key_facts": [],
+      "evidence": [],
+      "should_refuse": true,
+      "split": "heldout",
+      "origin": "must_refuse_template"
+    },
+    {
+      "id": "O03",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "question": "What will the weather be like in Paris tomorrow?",
+      "expected_source_docs": [],
+      "expected_key_facts": [],
+      "evidence": [],
+      "should_refuse": true,
+      "split": "heldout",
+      "origin": "llm"
+    },
+    {
+      "id": "O04",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "question": "Can you write me a poem about the ocean?",
+      "expected_source_docs": [],
+      "expected_key_facts": [],
+      "evidence": [],
+      "should_refuse": true,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "O05",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "question": "Who won the 2018 FIFA World Cup?",
+      "expected_source_docs": [],
+      "expected_key_facts": [],
+      "evidence": [],
+      "should_refuse": true,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "O06",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "question": "Which cryptocurrency should I invest in this month?",
+      "expected_source_docs": [],
+      "expected_key_facts": [],
+      "evidence": [],
+      "should_refuse": true,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "O07",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "question": "How do I bake sourdough bread at home?",
+      "expected_source_docs": [],
+      "expected_key_facts": [],
+      "evidence": [],
+      "should_refuse": true,
+      "split": "dev",
+      "origin": "llm"
+    },
+    {
+      "id": "O08",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "question": "Explain quantum entanglement in simple terms.",
+      "expected_source_docs": [],
+      "expected_key_facts": [],
+      "evidence": [],
+      "should_refuse": true,
+      "split": "dev",
+      "origin": "llm"
+    }
+  ],
+  "dropped": []
+}

@@ -1,0 +1,27 @@
+{"type": "stage_started", "ts": "2026-11-27T02:51:04", "stage": "ingest"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:04", "stage": "ingest", "seconds": 0.02, "tokens": 0}
+{"type": "stage_started", "ts": "2026-11-27T02:51:06", "stage": "intake"}
+{"type": "questions_asked", "ts": "2026-11-27T02:51:06", "questions": ["Who exactly is the primary audience for this assistant?", "What tone should the assistant use with users?", "Are there topics the assistant must never discuss?", "Should every answer cite the source document?", "How should the assistant respond to questions the documents do not cover?"], "dropped": [{"question": "Do you want a procurement assistant for our ship superintendents: look up spare parts in?", "reason": "answerable from the brief"}, {"question": "Which languages must the assistant support?", "reason": "over the 5-question cap"}]}
+{"type": "stage_done", "ts": "2026-11-27T02:51:06", "stage": "intake", "seconds": 0.02, "tokens": 2946}
+{"type": "stage_started", "ts": "2026-11-27T02:51:06", "stage": "groundability"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:06", "stage": "groundability", "seconds": 0.03, "tokens": 3406}
+{"type": "flags", "ts": "2026-11-27T02:51:06", "kind": "groundability", "flags": [{"type": "groundability", "topic": "look up spare parts in the catalogue", "verdict": "supported", "retrieval_confidence": 0.887, "threshold": 0.481, "llm_verdict": "supported", "reason": "100% of topic terms appear in the retrieved passages", "evidence": ["spares_catalogue.csv#16", "spares_catalogue.csv#3"]}, {"type": "groundability", "topic": "compare suppliers and their terms", "verdict": "supported", "retrieval_confidence": 0.833, "threshold": 0.481, "llm_verdict": "supported", "reason": "100% of topic terms appear in the retrieved passages", "evidence": ["supplier_a_terms.pdf#1", "supplier_b_terms.pdf#0"]}, {"type": "groundability", "topic": "check lead times and stock levels", "verdict": "supported", "retrieval_confidence": 0.825, "threshold": 0.481, "llm_verdict": "supported", "reason": "100% of topic terms appear in the retrieved passages", "evidence": ["spares_catalogue.csv#7", "spares_catalogue.csv#5"]}, {"type": "groundability", "topic": "work out order costs including quantity discounts", "verdict": "partial", "retrieval_confidence": 0.603, "threshold": 0.481, "llm_verdict": "partial", "reason": "50% of topic terms appear in the retrieved passages", "evidence": ["supplier_a_terms.pdf#0", "supplier_b_terms.pdf#0"], "message": "only partially supported - agent must answer only what the documents state"}]}
+{"type": "stage_started", "ts": "2026-11-27T02:51:06", "stage": "generate"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:07", "stage": "generate", "seconds": 1.36, "tokens": 1665}
+{"type": "flags", "ts": "2026-11-27T02:51:07", "kind": "tools", "attached": ["csv_lookup", "calculator"], "rejected": [{"name": "current_date", "reason": "brief involves no dates or deadlines"}, {"name": "weather", "reason": "brief never mentions weather, sea state or travel conditions"}]}
+{"type": "stage_started", "ts": "2026-11-27T02:51:07", "stage": "evalgen"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:07", "stage": "evalgen", "seconds": 0.0, "tokens": 8056}
+{"type": "stage_started", "ts": "2026-11-27T02:51:07", "stage": "judge_selftest"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:07", "stage": "judge_selftest", "seconds": 0.02, "tokens": 3072}
+{"type": "stage_started", "ts": "2026-11-27T02:51:07", "stage": "tournament"}
+{"type": "log", "ts": "2026-11-27T02:51:09", "message": "tournament candidate strict: score 90.9"}
+{"type": "log", "ts": "2026-11-27T02:51:09", "message": "tournament candidate concise: score 90.9"}
+{"type": "log", "ts": "2026-11-27T02:51:09", "message": "tournament candidate stepwise: score 95.5"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:09", "stage": "tournament", "seconds": 2.05, "tokens": 157204}
+{"type": "stage_started", "ts": "2026-11-27T02:51:09", "stage": "optimize"}
+{"type": "iteration_result", "ts": "2026-11-27T02:51:09", "iteration": 0, "kind": "baseline", "score_before": null, "score_after": 95.5, "taxonomy": {"prompt_defect": 1}, "tokens": 61691, "latency_s": 0.08}
+{"type": "iteration_result", "ts": "2026-11-27T02:51:09", "iteration": 1, "kind": "fix", "category": "prompt_defect", "why": "1 of 1 failures are prompt_defect: the right passage was retrieved but the answer omitted or mangled the expected facts", "change": "prompt patch: +2 rule(s) (Failures show facts present in retrieved context but missing from answers.)", "targeted_failure_ids": ["E04"], "fixed_ids": [], "newly_passing_ids": [], "regression_ids": [], "score_before": 95.5, "score_after": 95.5, "gain": 0.0, "decision": "kept", "taxonomy_before": {"prompt_defect": 1}, "taxonomy_after": {"prompt_defect": 1}, "tokens": 35466, "latency_s": 0.06}
+{"type": "stage_done", "ts": "2026-11-27T02:51:09", "stage": "optimize", "seconds": 0.06, "tokens": 35466}
+{"type": "stage_started", "ts": "2026-11-27T02:51:09", "stage": "final_eval"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:09", "stage": "final_eval", "seconds": 0.12, "tokens": 18480}
+{"type": "finished", "ts": "2026-11-27T02:51:09", "run_id": "spares_demo", "status": "completed", "heldout_score": 87.5, "dev_score": 95.5, "stop_reason": "early stop: iteration 1 gained 0.0 points (< 1)", "error": null}

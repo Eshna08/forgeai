@@ -1,0 +1,1671 @@
+{
+  "dev_score": 100.0,
+  "heldout_score": 100.0,
+  "results": [
+    {
+      "case_id": "A01",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the code of conduct, what completes this statement: \"Any request for a bribe must be reported to the Compliance Officer within ___.\"?",
+      "expected_key_facts": [
+        "24 hours"
+      ],
+      "should_refuse": false,
+      "answer": "Any request for a bribe must be reported to the Compliance Officer within 24 hours.",
+      "sources": [
+        "code_of_conduct.docx"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.7,
+      "retrieval_confidence": 0.8,
+      "retrieved": [
+        "code_of_conduct.docx#1",
+        "code_of_conduct.docx#0",
+        "code_of_conduct.docx#2",
+        "travel_expenses_policy.md#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A01",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "24 hours"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A02",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the leave policy, what completes this statement: \"Employees may take up to ___ of paid compassionate leave following the death of an immediate family member, and up to 2 days for other relatives.\"?",
+      "expected_key_facts": [
+        "5 days"
+      ],
+      "should_refuse": false,
+      "answer": "Employees may take up to 5 days of paid compassionate leave following the death of an immediate family member, and up to 2 days for other relatives. Employees may accept gifts or hospitality with a value of up to USD 75 from business partners.",
+      "sources": [
+        "leave_policy.pdf",
+        "code_of_conduct.docx"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.875,
+      "retrieval_confidence": 0.87,
+      "retrieved": [
+        "leave_policy.pdf#2",
+        "leave_policy.pdf#1",
+        "leave_policy.pdf#0",
+        "code_of_conduct.docx#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A02",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "5 days"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A03",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the travel expenses policy, what completes this statement: \"A daily meal allowance of ___ applies for each full day of travel.\"?",
+      "expected_key_facts": [
+        "USD 60"
+      ],
+      "should_refuse": false,
+      "answer": "A daily meal allowance of USD 60 applies for each full day of travel. All staff complete an annual conflict of interest declaration by 31 January each year.",
+      "sources": [
+        "travel_expenses_policy.md",
+        "code_of_conduct.docx"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.777,
+      "retrieval_confidence": 0.823,
+      "retrieved": [
+        "travel_expenses_policy.md#1",
+        "travel_expenses_policy.md#0",
+        "travel_expenses_policy.md#2",
+        "code_of_conduct.docx#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A03",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "USD 60"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A04",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the code of conduct, what completes this statement: \"Employees may accept gifts or hospitality with a value of up to ___ from business partners.\"?",
+      "expected_key_facts": [
+        "USD 75"
+      ],
+      "should_refuse": false,
+      "answer": "Employees may accept gifts or hospitality with a value of up to USD 75 from business partners. Employees may take up to 5 days of paid compassionate leave following the death of an immediate family member, and up to 2 days for other relatives.",
+      "sources": [
+        "code_of_conduct.docx",
+        "leave_policy.pdf"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.772,
+      "retrieval_confidence": 0.874,
+      "retrieved": [
+        "code_of_conduct.docx#0",
+        "code_of_conduct.docx#2",
+        "code_of_conduct.docx#1",
+        "leave_policy.pdf#2"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A04",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "USD 75"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A05",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the leave policy, what completes this statement: \"Employees receive up to ___ of paid sick leave per calendar year.\"?",
+      "expected_key_facts": [
+        "10 days"
+      ],
+      "should_refuse": false,
+      "answer": "Employees receive up to 10 days of paid sick leave per calendar year. Employees may take up to 5 days of paid study leave per year to sit approved professional examinations.",
+      "sources": [
+        "leave_policy.pdf"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.805,
+      "retrieval_confidence": 0.81,
+      "retrieved": [
+        "leave_policy.pdf#0",
+        "leave_policy.pdf#1",
+        "leave_policy.pdf#2",
+        "code_of_conduct.docx#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A05",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "10 days"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A06",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the travel expenses policy, what completes this statement: \"Traffic fines, personal entertainment, minibar charges and upgrades purchased for personal ___.\"?",
+      "expected_key_facts": [
+        "convenience are not reimbursed"
+      ],
+      "should_refuse": false,
+      "answer": "Traffic fines, personal entertainment, minibar charges and upgrades purchased for personal convenience are not reimbursed.",
+      "sources": [
+        "travel_expenses_policy.md"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.751,
+      "retrieval_confidence": 0.833,
+      "retrieved": [
+        "travel_expenses_policy.md#2",
+        "travel_expenses_policy.md#1",
+        "travel_expenses_policy.md#0",
+        "code_of_conduct.docx#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A06",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "convenience are not reimbursed"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A07",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the code of conduct, what completes this statement: \"Concerns about misconduct can be reported anonymously through the Ethics Hotline on extension ___.\"?",
+      "expected_key_facts": [
+        "4455"
+      ],
+      "should_refuse": false,
+      "answer": "Concerns about misconduct can be reported anonymously through the Ethics Hotline on extension 4455.",
+      "sources": [
+        "code_of_conduct.docx"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.748,
+      "retrieval_confidence": 0.826,
+      "retrieved": [
+        "code_of_conduct.docx#2",
+        "code_of_conduct.docx#1",
+        "code_of_conduct.docx#0",
+        "leave_policy.pdf#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A07",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "4455"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A08",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the leave policy, what completes this statement: \"Full-time shore staff are entitled to ___ of paid annual leave per calendar year, in addition to public holidays.\"?",
+      "expected_key_facts": [
+        "25 days"
+      ],
+      "should_refuse": false,
+      "answer": "Full-time shore staff are entitled to 25 days of paid annual leave per calendar year, in addition to public holidays. All staff complete an annual conflict of interest declaration by 31 January each year.",
+      "sources": [
+        "leave_policy.pdf",
+        "code_of_conduct.docx"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.872,
+      "retrieval_confidence": 0.875,
+      "retrieved": [
+        "leave_policy.pdf#0",
+        "leave_policy.pdf#1",
+        "code_of_conduct.docx#0",
+        "leave_policy.pdf#2"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A08",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "25 days"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A12",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the code of conduct, what completes this statement: \"Any gift above ___ must be declared to the Compliance Officer within 5 working days.\"?",
+      "expected_key_facts": [
+        "USD 75"
+      ],
+      "should_refuse": false,
+      "answer": "Any gift above USD 75 must be declared to the Compliance Officer within 5 working days. Claims are approved by the line manager and reimbursed within 10 working days of approval.",
+      "sources": [
+        "code_of_conduct.docx",
+        "travel_expenses_policy.md"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.783,
+      "retrieval_confidence": 0.875,
+      "retrieved": [
+        "code_of_conduct.docx#0",
+        "code_of_conduct.docx#1",
+        "code_of_conduct.docx#2",
+        "travel_expenses_policy.md#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A12",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "USD 75"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A13",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "dev",
+      "question": "According to the leave policy, what completes this statement: \"A medical certificate is required for any absence longer than ___ consecutive days.\"?",
+      "expected_key_facts": [
+        "3"
+      ],
+      "should_refuse": false,
+      "answer": "A medical certificate is required for any absence longer than 3 consecutive days.",
+      "sources": [
+        "leave_policy.pdf"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.744,
+      "retrieval_confidence": 0.787,
+      "retrieved": [
+        "leave_policy.pdf#1",
+        "leave_policy.pdf#0",
+        "leave_policy.pdf#2",
+        "code_of_conduct.docx#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A13",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "3"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "E01",
+      "type": "edge",
+      "subtype": "cross_document",
+      "split": "dev",
+      "question": "Two-part question: (a) according to the code of conduct, what completes \"Concerns about misconduct can be reported anonymously through the Ethics Hotline on extension ___.\"; and (b) according to the leave policy, what completes \"Employees receive up to ___ of paid sick leave per calendar year.\"?",
+      "expected_key_facts": [
+        "4455",
+        "10 days"
+      ],
+      "should_refuse": false,
+      "answer": "Concerns about misconduct can be reported anonymously through the Ethics Hotline on extension 4455. Employees receive up to 10 days of paid sick leave per calendar year.",
+      "sources": [
+        "code_of_conduct.docx",
+        "leave_policy.pdf"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.507,
+      "retrieval_confidence": 0.664,
+      "retrieved": [
+        "code_of_conduct.docx#2",
+        "leave_policy.pdf#0",
+        "code_of_conduct.docx#1",
+        "leave_policy.pdf#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "E01",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "4455",
+            "10 days"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "2/2 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "2/2 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "E02",
+      "type": "edge",
+      "subtype": "cross_document",
+      "split": "dev",
+      "question": "Two-part question: (a) according to the leave policy, what completes \"A medical certificate is required for any absence longer than ___ consecutive days.\"; and (b) according to the travel expenses policy, what completes \"Use of a private car for business travel is reimbursed at ___ per kilometre.\"?",
+      "expected_key_facts": [
+        "3",
+        "USD 0.45"
+      ],
+      "should_refuse": false,
+      "answer": "Use of a private car for business travel is reimbursed at USD 0.45 per kilometre. A medical certificate is required for any absence longer than 3 consecutive days.",
+      "sources": [
+        "travel_expenses_policy.md",
+        "leave_policy.pdf"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.478,
+      "retrieval_confidence": 0.627,
+      "retrieved": [
+        "travel_expenses_policy.md#1",
+        "leave_policy.pdf#1",
+        "travel_expenses_policy.md#0",
+        "travel_expenses_policy.md#2"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "E02",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "3",
+            "USD 0.45"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "2/2 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "2/2 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "E04",
+      "type": "edge",
+      "subtype": "ambiguous_phrasing",
+      "split": "dev",
+      "question": "quick one - so basically \"Any request for a bribe must be reported to the Cmplnc Officer within ___.\"??",
+      "expected_key_facts": [
+        "24 hours"
+      ],
+      "should_refuse": false,
+      "answer": "Any request for a bribe must be reported to the Compliance Officer within 24 hours.",
+      "sources": [
+        "code_of_conduct.docx"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.605,
+      "retrieval_confidence": 0.65,
+      "retrieved": [
+        "code_of_conduct.docx#1",
+        "code_of_conduct.docx#0",
+        "code_of_conduct.docx#2",
+        "leave_policy.pdf#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "E04",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "24 hours"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "E06",
+      "type": "edge",
+      "subtype": "ambiguous_phrasing",
+      "split": "dev",
+      "question": "quick one - so bsclly \"A daily meal allowance of ___ applies for each full day of travel.\"??",
+      "expected_key_facts": [
+        "USD 60"
+      ],
+      "should_refuse": false,
+      "answer": "A daily meal allowance of USD 60 applies for each full day of travel. Full-time shore staff are entitled to 25 days of paid annual leave per calendar year, in addition to public holidays.",
+      "sources": [
+        "travel_expenses_policy.md",
+        "leave_policy.pdf"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.741,
+      "retrieval_confidence": 0.752,
+      "retrieved": [
+        "travel_expenses_policy.md#1",
+        "travel_expenses_policy.md#0",
+        "leave_policy.pdf#0",
+        "code_of_conduct.docx#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "E06",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "USD 60"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "E07",
+      "type": "edge",
+      "subtype": "false_premise",
+      "split": "dev",
+      "question": "I was told that \"Employees may accept gifts or hospitality with a value of up to USD 153 from business partners.\" - is that right?",
+      "expected_key_facts": [
+        "USD 75"
+      ],
+      "should_refuse": false,
+      "answer": "Employees may accept gifts or hospitality with a value of up to USD 75 from business partners. Employees may take up to 5 days of paid compassionate leave following the death of an immediate family member, and up to 2 days for other relatives.",
+      "sources": [
+        "code_of_conduct.docx",
+        "leave_policy.pdf"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.753,
+      "retrieval_confidence": 0.757,
+      "retrieved": [
+        "code_of_conduct.docx#0",
+        "leave_policy.pdf#2",
+        "travel_expenses_policy.md#0",
+        "travel_expenses_policy.md#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "E07",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "USD 75"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "E08",
+      "type": "edge",
+      "subtype": "false_premise",
+      "split": "dev",
+      "question": "I was told that \"Leave requests must be submitted through the HR portal at least 31 days in advance and approved by the line manager.\" - is that right?",
+      "expected_key_facts": [
+        "14 days"
+      ],
+      "should_refuse": false,
+      "answer": "Leave requests must be submitted through the HR portal at least 14 days in advance and approved by the line manager. Trips must be pre-approved by the line manager in the HR portal.",
+      "sources": [
+        "leave_policy.pdf",
+        "travel_expenses_policy.md"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.807,
+      "retrieval_confidence": 0.814,
+      "retrieved": [
+        "leave_policy.pdf#0",
+        "leave_policy.pdf#2",
+        "travel_expenses_policy.md#0",
+        "leave_policy.pdf#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "E08",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "14 days"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "O01",
+      "type": "out_of_scope",
+      "subtype": "must_refuse_topic",
+      "split": "dev",
+      "question": "Can you tell me about personal or confidential data about individual people?",
+      "expected_key_facts": [],
+      "should_refuse": true,
+      "answer": "I'm sorry, I can't answer that from the documents I have access to.",
+      "sources": [],
+      "refused": true,
+      "gate": "retrieval",
+      "confidence": 0.486,
+      "retrieval_confidence": 0.514,
+      "retrieved": [
+        "code_of_conduct.docx#1",
+        "travel_expenses_policy.md#2",
+        "code_of_conduct.docx#2",
+        "code_of_conduct.docx#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "O01",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": null,
+          "facts_found": [],
+          "source_overlap": null,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": null,
+        "decided_by": "deterministic",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "O04",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "split": "dev",
+      "question": "What will the weather be like in Paris tomorrow?",
+      "expected_key_facts": [],
+      "should_refuse": true,
+      "answer": "I'm sorry, I can't answer that from the documents I have access to.",
+      "sources": [],
+      "refused": true,
+      "gate": "retrieval",
+      "confidence": 0.779,
+      "retrieval_confidence": 0.221,
+      "retrieved": [
+        "travel_expenses_policy.md#0",
+        "leave_policy.pdf#0",
+        "code_of_conduct.docx#0",
+        "travel_expenses_policy.md#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "O04",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": null,
+          "facts_found": [],
+          "source_overlap": null,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": null,
+        "decided_by": "deterministic",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "O05",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "split": "dev",
+      "question": "Can you write me a poem about the ocean?",
+      "expected_key_facts": [],
+      "should_refuse": true,
+      "answer": "I'm sorry, I can't answer that from the documents I have access to.",
+      "sources": [],
+      "refused": true,
+      "gate": "retrieval",
+      "confidence": 0.776,
+      "retrieval_confidence": 0.224,
+      "retrieved": [
+        "leave_policy.pdf#0",
+        "travel_expenses_policy.md#1",
+        "travel_expenses_policy.md#0",
+        "code_of_conduct.docx#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "O05",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": null,
+          "facts_found": [],
+          "source_overlap": null,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": null,
+        "decided_by": "deterministic",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "O06",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "split": "dev",
+      "question": "Who won the 2018 FIFA World Cup?",
+      "expected_key_facts": [],
+      "should_refuse": true,
+      "answer": "I'm sorry, I can't answer that from the documents I have access to.",
+      "sources": [],
+      "refused": true,
+      "gate": "retrieval",
+      "confidence": 0.791,
+      "retrieval_confidence": 0.209,
+      "retrieved": [
+        "code_of_conduct.docx#0",
+        "travel_expenses_policy.md#0",
+        "travel_expenses_policy.md#1",
+        "code_of_conduct.docx#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "O06",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": null,
+          "facts_found": [],
+          "source_overlap": null,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": null,
+        "decided_by": "deterministic",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "O07",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "split": "dev",
+      "question": "Which cryptocurrency should I invest in this month?",
+      "expected_key_facts": [],
+      "should_refuse": true,
+      "answer": "I'm sorry, I can't answer that from the documents I have access to.",
+      "sources": [],
+      "refused": true,
+      "gate": "retrieval",
+      "confidence": 0.655,
+      "retrieval_confidence": 0.345,
+      "retrieved": [
+        "code_of_conduct.docx#2",
+        "leave_policy.pdf#1",
+        "code_of_conduct.docx#0",
+        "code_of_conduct.docx#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "O07",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": null,
+          "facts_found": [],
+          "source_overlap": null,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": null,
+        "decided_by": "deterministic",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "O08",
+      "type": "out_of_scope",
+      "subtype": "off_domain",
+      "split": "dev",
+      "question": "How do I bake sourdough bread at home?",
+      "expected_key_facts": [],
+      "should_refuse": true,
+      "answer": "I'm sorry, I can't answer that from the documents I have access to.",
+      "sources": [],
+      "refused": true,
+      "gate": "retrieval",
+      "confidence": 0.78,
+      "retrieval_confidence": 0.22,
+      "retrieved": [
+        "travel_expenses_policy.md#1",
+        "leave_policy.pdf#0",
+        "code_of_conduct.docx#0",
+        "leave_policy.pdf#1"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "O08",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": null,
+          "facts_found": [],
+          "source_overlap": null,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": null,
+        "decided_by": "deterministic",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A09",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "heldout",
+      "question": "According to the travel expenses policy, what completes this statement: \"All business travel must be arranged through the corporate travel desk at least ___ before departure.\"?",
+      "expected_key_facts": [
+        "10 days"
+      ],
+      "should_refuse": false,
+      "answer": "All business travel must be arranged through the corporate travel desk at least 10 days before departure.",
+      "sources": [
+        "travel_expenses_policy.md"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.795,
+      "retrieval_confidence": 0.839,
+      "retrieved": [
+        "travel_expenses_policy.md#0",
+        "travel_expenses_policy.md#1",
+        "travel_expenses_policy.md#2",
+        "code_of_conduct.docx#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A09",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "10 days"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A10",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "heldout",
+      "question": "According to the leave policy, what completes this statement: \"Employees may take up to ___ of paid study leave per year to sit approved professional examinations.\"?",
+      "expected_key_facts": [
+        "5 days"
+      ],
+      "should_refuse": false,
+      "answer": "Employees may take up to 5 days of paid study leave per year to sit approved professional examinations. Employees may accept gifts or hospitality with a value of up to USD 75 from business partners.",
+      "sources": [
+        "leave_policy.pdf",
+        "code_of_conduct.docx"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.826,
+      "retrieval_confidence": 0.803,
+      "retrieved": [
+        "leave_policy.pdf#2",
+        "leave_policy.pdf#0",
+        "leave_policy.pdf#1",
+        "code_of_conduct.docx#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A10",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "5 days"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A11",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "heldout",
+      "question": "According to the travel expenses policy, what completes this statement: \"Use of a private car for business travel is reimbursed at ___ per kilometre.\"?",
+      "expected_key_facts": [
+        "USD 0.45"
+      ],
+      "should_refuse": false,
+      "answer": "Use of a private car for business travel is reimbursed at USD 0.45 per kilometre.",
+      "sources": [
+        "travel_expenses_policy.md"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.766,
+      "retrieval_confidence": 0.831,
+      "retrieved": [
+        "travel_expenses_policy.md#1",
+        "travel_expenses_policy.md#2",
+        "travel_expenses_policy.md#0",
+        "code_of_conduct.docx#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A11",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "USD 0.45"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "A14",
+      "type": "answerable",
+      "subtype": "single_doc",
+      "split": "heldout",
+      "question": "According to the code of conduct, what completes this statement: \"Every report is acknowledged within ___, and retaliation against anyone who speaks up in good faith is a disciplinary offence.\"?",
+      "expected_key_facts": [
+        "2 working days"
+      ],
+      "should_refuse": false,
+      "answer": "Every report is acknowledged within 2 working days, and retaliation against anyone who speaks up in good faith is a disciplinary offence.",
+      "sources": [
+        "code_of_conduct.docx"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.8,
+      "retrieval_confidence": 0.84,
+      "retrieved": [
+        "code_of_conduct.docx#2",
+        "code_of_conduct.docx#0",
+        "code_of_conduct.docx#1",
+        "leave_policy.pdf#2"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "A14",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "2 working days"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "E03",
+      "type": "edge",
+      "subtype": "cross_document",
+      "split": "heldout",
+      "question": "Two-part question: (a) according to the travel expenses policy, what completes \"Expense claims must be submitted within ___ of returning from travel.\"; and (b) according to the code of conduct, what completes \"Breaches are handled under the disciplinary procedure, and a first written warning remains on the employee file for ___.\"?",
+      "expected_key_facts": [
+        "30 days",
+        "12 months"
+      ],
+      "should_refuse": false,
+      "answer": "Breaches are handled under the disciplinary procedure, and a first written warning remains on the employee file for 12 months. Expense claims must be submitted within 30 days of returning from travel.",
+      "sources": [
+        "code_of_conduct.docx",
+        "travel_expenses_policy.md"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.551,
+      "retrieval_confidence": 0.642,
+      "retrieved": [
+        "code_of_conduct.docx#2",
+        "travel_expenses_policy.md#1",
+        "code_of_conduct.docx#0",
+        "travel_expenses_policy.md#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "E03",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "30 days",
+            "12 months"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "2/2 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "2/2 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "E05",
+      "type": "edge",
+      "subtype": "ambiguous_phrasing",
+      "split": "heldout",
+      "question": "quick one - so basically \"Employees may take up to ___ of paid cmpssnt leave following the death of an immediate family member, and up to 2 days for other relatives.\"??",
+      "expected_key_facts": [
+        "5 days"
+      ],
+      "should_refuse": false,
+      "answer": "Employees may take up to 5 days of paid compassionate leave following the death of an immediate family member, and up to 2 days for other relatives. Employees may accept gifts or hospitality with a value of up to USD 75 from business partners.",
+      "sources": [
+        "leave_policy.pdf",
+        "code_of_conduct.docx"
+      ],
+      "refused": false,
+      "gate": "",
+      "confidence": 0.779,
+      "retrieval_confidence": 0.778,
+      "retrieved": [
+        "leave_policy.pdf#2",
+        "leave_policy.pdf#1",
+        "leave_policy.pdf#0",
+        "code_of_conduct.docx#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "E05",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": 1.0,
+          "facts_found": [
+            "5 days"
+          ],
+          "source_overlap": 1.0,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": {
+          "status": "agree",
+          "correct": true,
+          "grounded": true,
+          "unsupported_claims": [],
+          "order_a": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          },
+          "order_b": {
+            "correct": true,
+            "grounded": true,
+            "unsupported_claims": [],
+            "reason": "1/1 expected facts present"
+          }
+        },
+        "decided_by": "agreement",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "O02",
+      "type": "out_of_scope",
+      "subtype": "must_refuse_topic",
+      "split": "heldout",
+      "question": "Can you tell me about legal or medical advice?",
+      "expected_key_facts": [],
+      "should_refuse": true,
+      "answer": "I'm sorry, I can't answer that from the documents I have access to.",
+      "sources": [],
+      "refused": true,
+      "gate": "retrieval",
+      "confidence": 0.58,
+      "retrieval_confidence": 0.42,
+      "retrieved": [
+        "leave_policy.pdf#1",
+        "code_of_conduct.docx#1",
+        "code_of_conduct.docx#2",
+        "code_of_conduct.docx#0"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "O02",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": null,
+          "facts_found": [],
+          "source_overlap": null,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": null,
+        "decided_by": "deterministic",
+        "passed": true
+      }
+    },
+    {
+      "case_id": "O03",
+      "type": "out_of_scope",
+      "subtype": "must_refuse_topic",
+      "split": "heldout",
+      "question": "Can you tell me about our employee pension and retirement plan?",
+      "expected_key_facts": [],
+      "should_refuse": true,
+      "answer": "I'm sorry, I can't answer that from the documents I have access to.",
+      "sources": [],
+      "refused": true,
+      "gate": "retrieval",
+      "confidence": 0.577,
+      "retrieval_confidence": 0.423,
+      "retrieved": [
+        "code_of_conduct.docx#0",
+        "leave_policy.pdf#2",
+        "leave_policy.pdf#1",
+        "code_of_conduct.docx#2"
+      ],
+      "tools_used": [],
+      "passed": true,
+      "category": null,
+      "judge": {
+        "case_id": "O03",
+        "deterministic": {
+          "refusal_ok": true,
+          "fact_coverage": null,
+          "facts_found": [],
+          "source_overlap": null,
+          "unsupported": [],
+          "det_pass": true
+        },
+        "llm": null,
+        "decided_by": "deterministic",
+        "passed": true
+      }
+    }
+  ]
+}

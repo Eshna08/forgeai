@@ -1,0 +1,26 @@
+{"type": "stage_started", "ts": "2026-11-27T02:51:09", "stage": "ingest"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:09", "stage": "ingest", "seconds": 0.02, "tokens": 0}
+{"type": "stage_started", "ts": "2026-11-27T02:51:10", "stage": "intake"}
+{"type": "questions_asked", "ts": "2026-11-27T02:51:10", "questions": ["Who exactly is the primary audience for this assistant?", "What tone should the assistant use with users?", "Are there topics the assistant must never discuss?", "Should every answer cite the source document?", "How should the assistant respond to questions the documents do not cover?"], "dropped": [{"question": "Do you want an assistant that answers prospective students' questions about undergraduate admissions: application deadlines?", "reason": "answerable from the brief"}, {"question": "Which languages must the assistant support?", "reason": "over the 5-question cap"}]}
+{"type": "stage_done", "ts": "2026-11-27T02:51:10", "stage": "intake", "seconds": 0.02, "tokens": 2576}
+{"type": "stage_started", "ts": "2026-11-27T02:51:10", "stage": "groundability"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:10", "stage": "groundability", "seconds": 0.03, "tokens": 4157}
+{"type": "flags", "ts": "2026-11-27T02:51:10", "kind": "groundability", "flags": [{"type": "groundability", "topic": "application deadlines and how many days are left", "verdict": "supported", "retrieval_confidence": 0.7, "threshold": 0.489, "llm_verdict": "supported", "reason": "67% of topic terms appear in the retrieved passages", "evidence": ["admissions_policy.pdf#0", "fees_and_scholarships.docx#1"]}, {"type": "groundability", "topic": "entry requirements", "verdict": "supported", "retrieval_confidence": 0.842, "threshold": 0.489, "llm_verdict": "supported", "reason": "100% of topic terms appear in the retrieved passages", "evidence": ["admissions_policy.pdf#0", "admissions_policy.pdf#1"]}, {"type": "groundability", "topic": "English language requirements for international students", "verdict": "supported", "retrieval_confidence": 0.921, "threshold": 0.489, "llm_verdict": "supported", "reason": "100% of topic terms appear in the retrieved passages", "evidence": ["international_students.txt#0", "admissions_policy.pdf#0"]}, {"type": "groundability", "topic": "tuition fees and total course cost", "verdict": "supported", "retrieval_confidence": 0.651, "threshold": 0.489, "llm_verdict": "supported", "reason": "60% of topic terms appear in the retrieved passages", "evidence": ["fees_and_scholarships.docx#0", "fees_and_scholarships.docx#1"]}, {"type": "groundability", "topic": "scholarships", "verdict": "supported", "retrieval_confidence": 0.852, "threshold": 0.489, "llm_verdict": "supported", "reason": "100% of topic terms appear in the retrieved passages", "evidence": ["fees_and_scholarships.docx#0", "fees_and_scholarships.docx#1"]}]}
+{"type": "stage_started", "ts": "2026-11-27T02:51:10", "stage": "generate"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:10", "stage": "generate", "seconds": 0.17, "tokens": 1713}
+{"type": "flags", "ts": "2026-11-27T02:51:10", "kind": "tools", "attached": ["calculator", "current_date"], "rejected": [{"name": "csv_lookup", "reason": "no CSV file in the document folder"}, {"name": "weather", "reason": "brief never mentions weather, sea state or travel conditions"}]}
+{"type": "stage_started", "ts": "2026-11-27T02:51:10", "stage": "evalgen"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:10", "stage": "evalgen", "seconds": 0.02, "tokens": 9392}
+{"type": "stage_started", "ts": "2026-11-27T02:51:10", "stage": "judge_selftest"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:10", "stage": "judge_selftest", "seconds": 0.02, "tokens": 3072}
+{"type": "stage_started", "ts": "2026-11-27T02:51:10", "stage": "tournament"}
+{"type": "log", "ts": "2026-11-27T02:51:11", "message": "tournament candidate strict: score 100.0"}
+{"type": "log", "ts": "2026-11-27T02:51:11", "message": "tournament candidate concise: score 100.0"}
+{"type": "log", "ts": "2026-11-27T02:51:11", "message": "tournament candidate stepwise: score 100.0"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:11", "stage": "tournament", "seconds": 1.03, "tokens": 102939}
+{"type": "stage_started", "ts": "2026-11-27T02:51:12", "stage": "optimize"}
+{"type": "iteration_result", "ts": "2026-11-27T02:51:12", "iteration": 0, "kind": "baseline", "score_before": null, "score_after": 100.0, "taxonomy": {}, "tokens": 20640, "latency_s": 0.06}
+{"type": "stage_done", "ts": "2026-11-27T02:51:12", "stage": "optimize", "seconds": 0.0, "tokens": 0}
+{"type": "stage_started", "ts": "2026-11-27T02:51:12", "stage": "final_eval"}
+{"type": "stage_done", "ts": "2026-11-27T02:51:12", "stage": "final_eval", "seconds": 0.09, "tokens": 17867}
+{"type": "finished", "ts": "2026-11-27T02:51:12", "run_id": "admissions_demo", "status": "completed", "heldout_score": 87.5, "dev_score": 100.0, "stop_reason": "target reached (100.0 >= 100.0)", "error": null}
